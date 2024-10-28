@@ -1,6 +1,6 @@
 .nav {
   background-color: var(--primary);
-  padding: 0.8rem;
+  padding: 0.6rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
@@ -18,7 +18,7 @@
 
 .logo {
   color: #ffffff;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-weight: 700;
   text-decoration: none;
   transition: color 0.3s ease;
@@ -35,9 +35,9 @@
   color: #ffffff;
   text-decoration: none;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 0.9rem;
   transition: color 0.3s ease;
-  padding: 0.5rem;
+  padding: 0.4rem;
 }
 
 .logo:hover,
@@ -53,10 +53,10 @@
   }
 
   .logo {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
   .link {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 }
