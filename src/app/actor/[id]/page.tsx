@@ -10,9 +10,9 @@ type Props = {
   }
 }
 
-export default async function ActorPage({ params }: Props) {
-  // id를 비동기적으로 가져옵니다.
-  const id = await params.id;
+export default function ActorPage({ params }: Props) {
+  // await 제거 - params.id는 이미 문자열입니다
+  const id = params.id;
 
   const allCastMembers = [...castMembersPart1, ...castMembersPart2];
   const actor = allCastMembers.find(member => member.id === parseInt(id));
