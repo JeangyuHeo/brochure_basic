@@ -45,15 +45,19 @@ export default function Home() {
 
         {/* 버튼 그룹 */}
         <div className={styles.buttonGroup}>
-          <Link href="/song-list" className={`${styles.button} ${styles.primary}`}>
-            공연 순서
-          </Link>
-          <Link href="/cast1" className={`${styles.button} ${styles.secondary}`}>
-            1부 출연진
-          </Link>
-          <Link href="/cast2" className={`${styles.button} ${styles.secondary}`}>
-            2부 출연진
-          </Link>
+          <div className={styles.primaryButtonContainer}>
+            <Link href="/song-list" className={`${styles.button} ${styles.primary}`}>
+              공연 순서
+            </Link>
+          </div>
+          <div className={styles.secondaryButtonContainer}>
+            <Link href="/cast1" className={`${styles.button} ${styles.secondary}`}>
+              1부 출연진
+            </Link>
+            <Link href="/cast2" className={`${styles.button} ${styles.secondary}`}>
+              2부 출연진
+            </Link>
+          </div>
         </div>
       </div>
     </div>
