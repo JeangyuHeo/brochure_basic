@@ -5,26 +5,32 @@ import Link from 'next/link';
 import styles from '../../styles/Actor.module.css';
 
 // 타입을 더 구체적으로 정의
+type Params = {
+  id: string;
+}
+
 type Props = {
-  params: {
-    id: string;
-  };
-  searchParams: Record<string, string | string[] | undefined>;
+  params: Promise<Params>;
 }
 
 // metadata 생성 함수 추가
 export async function generateMetadata({ params }: Props) {
+  const resolvedParams = await params;
   const allCastMembers = [...castMembersPart1, ...castMembersPart2];
-  const actor = allCastMembers.find(member => member.id === parseInt(params.id));
+  const actor = allCastMembers.find(member => member.id === parseInt(resolvedParams.id));
   
   return {
     title: actor ? `${actor.name} - SDS 뮤지컬` : '배우 정보',
   };
 }
 
-export default function ActorPage({ params }: Props) {
+export default async function ActorPage({ params }: Props) {
+  // params가 Promise이므로 await으로 처리
+  const resolvedParams = await params;
+  const actorId = resolvedParams.id;
+  
   const allCastMembers = [...castMembersPart1, ...castMembersPart2];
-  const actor = allCastMembers.find(member => member.id === parseInt(params.id));
+  const actor = allCastMembers.find(member => member.id === parseInt(actorId));
 
   if (!actor) {
     return <div className={styles.notFound}>배우를 찾을 수 없습니다.</div>;

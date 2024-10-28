@@ -2,13 +2,19 @@ import { getSongById } from '../../../data/songs';
 import Image from 'next/image';
 import styles from '../../styles/Song.module.css';
 
-interface PageProps {
-  params: { id: string };
+type Params = {
+  id: string;
 }
 
-export default async function SongPage({ params }: PageProps) {
-  const id = await params.id;
-  const song = getSongById(parseInt(id));
+type Props = {
+  params: Promise<Params>;
+}
+
+export default async function SongPage({ params }: Props) {
+  // params가 Promise이므로 await으로 처리
+  const resolvedParams = await params;
+  const songId = resolvedParams.id;
+  const song = getSongById(parseInt(songId));
 
   if (!song) {
     return <div className={styles.notFound}>곡을 찾을 수 없습니다.</div>;
