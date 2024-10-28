@@ -1,95 +1,107 @@
 .pageContainer {
   min-height: 100vh;
-  width: 100%;
-  background-color: #ffffff;
+  padding: 1rem;
+  background-color: var(--background);
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding: 2rem;
 }
 
 .container {
-  max-width: 800px;
   width: 100%;
-  background-color: #ffffff;
-  color: var(--foreground);
-  font-family: 'NanumSquare', sans-serif;
-  padding: 2rem;
-  border-radius: 10px;
+  max-width: 600px;
+  background-color: var(--secondary);
+  border-radius: 15px;
+  padding: 1.5rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .title {
-  font-size: 2.8rem;
+  font-size: 2rem;
   color: var(--primary);
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   font-weight: 700;
 }
 
 .timeInfo {
   text-align: center;
-  margin-bottom: 2rem;
-  font-size: 1rem;
-  color: var(--primary-light);
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+  color: var(--accent);
 }
 
 .performanceList {
-  list-style-type: none;
+  list-style: none;
   padding: 0;
 }
 
 .performanceItem {
-  background-color: var(--secondary);
+  background-color: var(--background);
   border-radius: 10px;
   padding: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
   display: grid;
-  grid-template-columns: 80px 1fr 80px;
+  grid-template-columns: auto 1fr auto;
+  gap: 0.8rem;
   align-items: center;
-  gap: 1rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .time {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 600;
   color: var(--primary);
 }
 
 .artist {
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   font-weight: 700;
   color: var(--primary);
 }
 
 .duration {
-  font-size: 1rem;
-  text-align: right;
+  font-size: 0.9rem;
   color: var(--accent);
 }
 
 .description {
   grid-column: 1 / -1;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   color: var(--accent);
 }
 
-@media (max-width: 600px) {
+@media (min-width: 768px) {
+  .container {
+    max-width: 800px;
+    padding: 2rem;
+  }
+
+  .title {
+    font-size: 2.8rem;
+  }
+
+  .timeInfo {
+    font-size: 1rem;
+  }
+
   .performanceItem {
-    grid-template-columns: 1fr 1fr;
+    padding: 1.2rem;
+    gap: 1rem;
   }
-  
+
   .time {
-    grid-column: 1;
+    font-size: 1.2rem;
   }
-  
+
   .artist {
-    grid-column: 1 / -1;
+    font-size: 1.4rem;
   }
-  
+
   .duration {
-    grid-column: 2;
-    text-align: right;
+    font-size: 1rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
   }
 }

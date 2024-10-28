@@ -25,7 +25,6 @@ export async function generateMetadata({ params }: Props) {
 }
 
 export default async function ActorPage({ params }: Props) {
-  // params가 Promise이므로 await으로 처리
   const resolvedParams = await params;
   const actorId = resolvedParams.id;
   
@@ -44,7 +43,8 @@ export default async function ActorPage({ params }: Props) {
             src={actor.image}
             alt={actor.name}
             fill
-            sizes="(max-width: 300px) 100vw"
+            sizes="(max-width: 768px) 100vw, 300px"
+            priority
             className={styles.actorImage}
           />
         </div>
@@ -58,8 +58,10 @@ export default async function ActorPage({ params }: Props) {
               return (
                 <li key={index} className={styles.songItem}>
                   <Link href={fullSong ? `/song/${fullSong.id}` : '#'} className={styles.songLink}>
-                    <span className={styles.songTitle}>{song.title}</span>
-                    <span className={styles.songDescription}>{song.description}</span>
+                    <div className={styles.songInfo}>
+                      <span className={styles.songTitle}>{song.title}</span>
+                      <span className={styles.songDescription}>{song.description}</span>
+                    </div>
                   </Link>
                 </li>
               );

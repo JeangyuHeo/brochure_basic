@@ -1,26 +1,27 @@
 .container {
   min-height: 100vh;
+  padding: 1rem;
+  background-color: var(--background);
   display: flex;
   justify-content: center;
-  align-items: center;
-  background-color: var(--background);
-  padding: 2rem;
-  font-family: 'NanumSquare', sans-serif;
+  align-items: flex-start;
+  padding-top: 2rem;
 }
 
 .songCard {
-  display: flex;
-  background-color: #ffffff;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  max-width: 800px;
   width: 100%;
+  max-width: 600px;
+  background-color: var(--secondary);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
 }
 
 .imageWrapper {
   position: relative;
-  width: 300px;
+  width: 100%;
   height: 300px;
 }
 
@@ -29,26 +30,46 @@
 }
 
 .songInfo {
-  padding: 2rem;
-  flex: 1;
+  padding: 1.5rem;
 }
 
 .songTitle {
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   color: var(--primary);
   margin-bottom: 1rem;
   font-weight: 700;
 }
 
 .songDescription {
-  font-size: 1.2rem;
-  color: var(--foreground);
+  font-size: 1.1rem;
+  color: var(--accent);
   line-height: 1.6;
 }
 
 .notFound {
-  color: var(--primary-light);
-  font-size: 1.5rem;
   text-align: center;
-  font-weight: 500;
+  font-size: 1.2rem;
+  color: var(--primary);
+  padding: 2rem;
+}
+
+@media (min-width: 768px) {
+  .songCard {
+    flex-direction: row;
+    max-width: 800px;
+  }
+
+  .imageWrapper {
+    width: 300px;
+    height: auto;
+  }
+
+  .songInfo {
+    flex: 1;
+    padding: 2rem;
+  }
+
+  .songTitle {
+    font-size: 2rem;
+  }
 }
