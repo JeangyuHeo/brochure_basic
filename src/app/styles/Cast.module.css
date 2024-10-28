@@ -1,48 +1,85 @@
 .container {
+  padding: 1rem 0.5rem;
   min-height: 100vh;
-  padding: 0.8rem;
   background-color: var(--background);
 }
 
 .title {
-  font-size: 1.8rem;
-  color: var(--primary);
   text-align: center;
-  margin-bottom: 1.5rem;
-  font-weight: 700;
+  color: var(--primary);
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
 }
 
-.castGrid {
+.grid {
   display: grid;
-  /* 2열 그리드로 변경 */
-  grid-template-columns: repeat(2, 1fr);
-  gap: 0.8rem;
-  padding: 0.5rem;
-  max-width: 700px;
-  margin: 0 auto;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 1rem;
+  padding: 0 0.5rem;
 }
 
+.card {
+  background-color: var(--secondary);
+  border-radius: 10px;
+  overflow: hidden;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+}
+
+.image {
+  object-fit: cover;
+}
+
+.info {
+  padding: 0.8rem;
+}
+
+.name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin: 0;
+}
+
+.role {
+  font-size: 0.9rem;
+  color: var(--accent);
+  margin: 0.3rem 0 0 0;
+}
+
+/* 태블릿 이상 */
 @media (min-width: 768px) {
   .container {
-    padding: 1.5rem;
+    padding: 2rem;
   }
 
-  .title {
-    font-size: 2.2rem;
-    margin-bottom: 2rem;
-  }
-
-  .castGrid {
-    gap: 1.2rem;
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 1.5rem;
     padding: 0;
-    max-width: 800px;
   }
-}
 
-/* 작은 화면에서도 2열 유지 */
-@media (max-width: 480px) {
-  .castGrid {
-    gap: 0.5rem;
-    padding: 0.3rem;
+  .info {
+    padding: 1rem;
+  }
+
+  .name {
+    font-size: 1.1rem;
+  }
+
+  .role {
+    font-size: 1rem;
   }
 }
