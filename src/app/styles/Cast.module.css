@@ -1,5 +1,5 @@
 .container {
-  padding: 1rem 0.5rem;
+  padding: 0.5rem;
   min-height: 100vh;
   background-color: var(--background);
 }
@@ -7,15 +7,15 @@
 .title {
   text-align: center;
   color: var(--primary);
-  font-size: 1.5rem;
-  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
 }
 
-.grid {
+.castGrid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 0.8rem;
-  padding: 0 0.3rem;
+  gap: 0.5rem;
+  padding: 0 0.2rem;
   max-width: 768px;
   margin: 0 auto;
 }
@@ -72,7 +72,7 @@
     margin-bottom: 2rem;
   }
 
-  .grid {
+  .castGrid {
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
     gap: 1.5rem;
     padding: 0;
