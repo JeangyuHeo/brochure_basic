@@ -4,10 +4,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 import styles from '../../styles/Actor.module.css';
 
-interface Props {
-  params: {
-    id: string;
-  };
+// 타입 정의 변경
+type Params = { id: string }
+
+type PageProps = {
+  params: Params
 }
 
 // 정적 경로 생성
@@ -18,8 +19,9 @@ export async function generateStaticParams() {
   }));
 }
 
-// 페이지 컴포넌트
-export default function ActorPage({ params }: Props) {
+// 페이지 컴포넌트를 Server Component로 명시적 선언
+export default async function ActorPage({ params }: PageProps) {
+  // 서버 컴포넌트에서 데이터 처리
   const allCastMembers = [...castMembersPart1, ...castMembersPart2];
   const actor = allCastMembers.find(
     (member) => member.id === parseInt(params.id)
