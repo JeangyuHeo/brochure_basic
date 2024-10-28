@@ -4,20 +4,26 @@ import Image from 'next/image';
 import Link from 'next/link';
 import styles from '../../styles/Actor.module.css';
 
-type PageProps = {
+interface Props {
   params: {
     id: string;
   };
-  searchParams: { [key: string]: string | string[] | undefined };
 }
 
-export default function ActorPage({ params, searchParams }: PageProps) {
-  if (!params.id) {
-    return <div className={styles.notFound}>잘못된 접근입니다.</div>;
-  }
-
+// 정적 경로 생성
+export async function generateStaticParams() {
   const allCastMembers = [...castMembersPart1, ...castMembersPart2];
-  const actor = allCastMembers.find(member => member.id === parseInt(params.id));
+  return allCastMembers.map((member) => ({
+    id: member.id.toString(),
+  }));
+}
+
+// 페이지 컴포넌트
+export default function ActorPage({ params }: Props) {
+  const allCastMembers = [...castMembersPart1, ...castMembersPart2];
+  const actor = allCastMembers.find(
+    (member) => member.id === parseInt(params.id)
+  );
 
   if (!actor) {
     return <div className={styles.notFound}>배우를 찾을 수 없습니다.</div>;
@@ -27,12 +33,12 @@ export default function ActorPage({ params, searchParams }: PageProps) {
     <div className={styles.container}>
       <div className={styles.actorCard}>
         <div className={styles.imageWrapper}>
-          <Image 
-            src={actor.image} 
-            alt={actor.name} 
+          <Image
+            src={actor.image}
+            alt={actor.name}
             fill
             sizes="(max-width: 300px) 100vw"
-            className={styles.actorImage} 
+            className={styles.actorImage}
           />
         </div>
         <div className={styles.actorInfo}>
@@ -41,12 +47,20 @@ export default function ActorPage({ params, searchParams }: PageProps) {
           <h3 className={styles.songsTitle}>출연 곡</h3>
           <ul className={styles.songsList}>
             {actor.songs.map((song, index) => {
-              const fullSong = getSongByTitleAndDescription(song.title, song.description);
+              const fullSong = getSongByTitleAndDescription(
+                song.title,
+                song.description
+              );
               return (
                 <li key={index} className={styles.songItem}>
-                  <Link href={fullSong ? `/song/${fullSong.id}` : '#'} className={styles.songLink}>
+                  <Link
+                    href={fullSong ? `/song/${fullSong.id}` : '#'}
+                    className={styles.songLink}
+                  >
                     <span className={styles.songTitle}>{song.title}</span>
-                    <span className={styles.songDescription}>{song.description}</span>
+                    <span className={styles.songDescription}>
+                      {song.description}
+                    </span>
                   </Link>
                 </li>
               );
