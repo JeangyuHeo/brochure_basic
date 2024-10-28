@@ -4,18 +4,20 @@ import Image from 'next/image';
 import Link from 'next/link';
 import styles from '../../styles/Actor.module.css';
 
-type Props = {
+type PageProps = {
   params: {
     id: string;
-  }
+  };
+  searchParams: { [key: string]: string | string[] | undefined };
 }
 
-export default function ActorPage({ params }: Props) {
-  // await 제거 - params.id는 이미 문자열입니다
-  const id = params.id;
+export default function ActorPage({ params, searchParams }: PageProps) {
+  if (!params.id) {
+    return <div className={styles.notFound}>잘못된 접근입니다.</div>;
+  }
 
   const allCastMembers = [...castMembersPart1, ...castMembersPart2];
-  const actor = allCastMembers.find(member => member.id === parseInt(id));
+  const actor = allCastMembers.find(member => member.id === parseInt(params.id));
 
   if (!actor) {
     return <div className={styles.notFound}>배우를 찾을 수 없습니다.</div>;
@@ -25,7 +27,13 @@ export default function ActorPage({ params }: Props) {
     <div className={styles.container}>
       <div className={styles.actorCard}>
         <div className={styles.imageWrapper}>
-          <Image src={actor.image} alt={actor.name} layout="fill" objectFit="cover" className={styles.actorImage} />
+          <Image 
+            src={actor.image} 
+            alt={actor.name} 
+            fill
+            sizes="(max-width: 300px) 100vw"
+            className={styles.actorImage} 
+          />
         </div>
         <div className={styles.actorInfo}>
           <h1 className={styles.actorName}>{actor.name}</h1>
