@@ -4,11 +4,13 @@ import Image from 'next/image';
 import Link from 'next/link';
 import styles from '../../styles/Actor.module.css';
 
-interface PageProps {
-  params: { id: string };
+type Props = {
+  params: {
+    id: string;
+  }
 }
 
-export default async function ActorPage({ params }: PageProps) {
+export default async function ActorPage({ params }: Props) {
   // id를 비동기적으로 가져옵니다.
   const id = await params.id;
 
