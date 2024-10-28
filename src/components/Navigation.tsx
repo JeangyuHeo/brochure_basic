@@ -5,8 +5,10 @@ export default function Navigation() {
   return (
     <nav className={styles.nav}>
       <div className={styles.container}>
-        <Link href="/" className={styles.logo}>
-          SDS 뮤지컬
+        <Link href="/" className={styles.logoContainer}>
+          <div className={styles.mainTitle}>2024 SDS Musical</div>
+          <div className={styles.subTitle}>Gala Concert</div>
+          <div className={styles.ordinal}>3rd</div>
         </Link>
         <div className={styles.links}>
           <Link href="/song-list" className={styles.link}>

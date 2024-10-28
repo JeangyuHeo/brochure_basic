@@ -60,3 +60,48 @@
     font-size: 1rem;
   }
 }
+
+.logoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}
+
+.mainTitle {
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.subTitle {
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 0;
+  font-family: 'Brush Script MT', cursive;
+  letter-spacing: 2px;
+}
+
+.ordinal {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0;
+  font-style: italic;
+}
+
+@media (min-width: 768px) {
+  .mainTitle {
+    font-size: 1.4rem;
+  }
+
+  .subTitle {
+    font-size: 2.4rem;
+  }
+
+  .ordinal {
+    font-size: 1.2rem;
+  }
+}
