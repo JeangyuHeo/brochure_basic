@@ -4,28 +4,27 @@ import Image from 'next/image';
 import Link from 'next/link';
 import styles from '../../styles/Actor.module.css';
 
-// 타입 정의 변경
-type Params = { id: string }
-
-type PageProps = {
-  params: Params
+// 타입을 더 구체적으로 정의
+type Props = {
+  params: {
+    id: string;
+  };
+  searchParams: Record<string, string | string[] | undefined>;
 }
 
-// 정적 경로 생성
-export async function generateStaticParams() {
+// metadata 생성 함수 추가
+export async function generateMetadata({ params }: Props) {
   const allCastMembers = [...castMembersPart1, ...castMembersPart2];
-  return allCastMembers.map((member) => ({
-    id: member.id.toString(),
-  }));
+  const actor = allCastMembers.find(member => member.id === parseInt(params.id));
+  
+  return {
+    title: actor ? `${actor.name} - SDS 뮤지컬` : '배우 정보',
+  };
 }
 
-// 페이지 컴포넌트를 Server Component로 명시적 선언
-export default async function ActorPage({ params }: PageProps) {
-  // 서버 컴포넌트에서 데이터 처리
+export default function ActorPage({ params }: Props) {
   const allCastMembers = [...castMembersPart1, ...castMembersPart2];
-  const actor = allCastMembers.find(
-    (member) => member.id === parseInt(params.id)
-  );
+  const actor = allCastMembers.find(member => member.id === parseInt(params.id));
 
   if (!actor) {
     return <div className={styles.notFound}>배우를 찾을 수 없습니다.</div>;
@@ -49,20 +48,12 @@ export default async function ActorPage({ params }: PageProps) {
           <h3 className={styles.songsTitle}>출연 곡</h3>
           <ul className={styles.songsList}>
             {actor.songs.map((song, index) => {
-              const fullSong = getSongByTitleAndDescription(
-                song.title,
-                song.description
-              );
+              const fullSong = getSongByTitleAndDescription(song.title, song.description);
               return (
                 <li key={index} className={styles.songItem}>
-                  <Link
-                    href={fullSong ? `/song/${fullSong.id}` : '#'}
-                    className={styles.songLink}
-                  >
+                  <Link href={fullSong ? `/song/${fullSong.id}` : '#'} className={styles.songLink}>
                     <span className={styles.songTitle}>{song.title}</span>
-                    <span className={styles.songDescription}>
-                      {song.description}
-                    </span>
+                    <span className={styles.songDescription}>{song.description}</span>
                   </Link>
                 </li>
               );
