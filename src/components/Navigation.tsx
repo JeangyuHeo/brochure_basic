@@ -5,20 +5,18 @@ export default function Navigation() {
   return (
     <nav className={styles.nav}>
       <div className={styles.container}>
-        <Link href="/" className={styles.logoContainer}>
-          <div className={styles.mainTitle}>2024 SDS Musical</div>
-          <div className={styles.subTitle}>Gala Concert</div>
-          <div className={styles.ordinal}>3rd</div>
+        <Link href="/" className={styles.logo}>
+          SDS MUSICAL
         </Link>
         <div className={styles.links}>
           <Link href="/song-list" className={styles.link}>
             곡 순서
           </Link>
           <Link href="/cast1" className={styles.link}>
-            1부 출연진
+            1부
           </Link>
           <Link href="/cast2" className={styles.link}>
-            2부 출연진
+            2부
           </Link>
         </div>
       </div>

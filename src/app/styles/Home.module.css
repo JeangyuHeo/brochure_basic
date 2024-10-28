@@ -1,98 +1,172 @@
 .container {
   min-height: 100vh;
+  background-color: #ffffff;
+  padding: 2rem 1rem;  /* 상단 여백 증가 */
+}
+
+.content {
+  max-width: 320px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--background);
-  color: var(--foreground);
-  font-family: 'NanumSquare', sans-serif;
-  padding: 2rem;
+  gap: 2.2rem;  /* 섹션 간격 증가 */
 }
 
-.title {
-  font-size: 4rem;
-  margin-bottom: 2rem;
+/* 타이틀 섹션 */
+.titleSection {
   text-align: center;
-  color: var(--primary);
-  font-weight: 800;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 0.8rem;
 }
 
+.mainTitle {
+  font-size: 0.9rem;
+  color: #666666;
+  margin-bottom: 0.6rem;
+  font-weight: 500;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.subTitle {
+  font-size: 2.4rem;  /* 크기 증가 */
+  color: #8B0000;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+}
+
+.ordinal {
+  font-size: 0.85rem;
+  color: #BA4A4A;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  display: inline-block;
+  margin-top: 0.2rem;
+}
+
+/* 이미지 섹션 */
 .imageContainer {
   position: relative;
   width: 100%;
-  max-width: 800px;
-  height: auto;
-  margin-bottom: 2rem;
-  aspect-ratio: 16 / 9;
-  border-radius: 20px;
+  aspect-ratio: 4/3;  /* 비율 변경 */
+  border-radius: 24px;  /* 더 둥글게 */
   overflow: hidden;
+  box-shadow: 0 12px 30px rgba(139, 0, 0, 0.15);
 }
 
 .image {
   object-fit: cover;
-  width: 100%;
-  height: 100%;
 }
 
-.overlay {
-  display: none;
+/* 공연 정보 카드 */
+.scheduleCard {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 1.2rem 1.4rem;  /* 패딩 증가 */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  border: 1px solid #f0f0f0;
+  margin: 0.5rem 0;
 }
 
-.subtitle {
-  font-size: 2.5rem;
-  margin-bottom: 1.5rem;
-  color: var(--primary);
-  font-weight: 600;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-}
-
-.buttonContainer {
+.scheduleRow {
   display: flex;
-  gap: 2rem;
-  margin-bottom: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.scheduleRow:last-child {
+  border-bottom: none;
+}
+
+.scheduleLabel {
+  font-size: 0.85rem;
+  color: #888888;
+  font-weight: 500;
+  letter-spacing: -0.3px;
+}
+
+.scheduleValue {
+  font-size: 0.95rem;
+  color: #333333;
+  font-weight: 600;
+  letter-spacing: -0.3px;
+}
+
+.timeValues {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.3rem;
+  font-size: 0.95rem;
+  color: #333333;
+  font-weight: 600;
+}
+
+/* 버튼 그룹 */
+.buttonGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-top: 0.5rem;
 }
 
 .button {
-  padding: 1rem 2rem;
-  font-size: 1.2rem;
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: all 0.3s ease;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 14px;
+  font-size: 0.95rem;
   font-weight: 600;
-  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  letter-spacing: -0.3px;
 }
 
-.button1 {
-  background-color: var(--primary);
-  color: #ffffff;
+.primary {
+  background-color: #8B0000;
+  color: white;
+  border: none;
+  box-shadow: 0 6px 16px rgba(139, 0, 0, 0.25);
 }
 
-.button2 {
-  background-color: var(--secondary);
-  color: var(--primary);
+.secondary {
+  background-color: #F8F8F8;
+  color: #333333;
+  border: none;
 }
 
-.button3 {
-  background-color: var(--accent);
-  color: #ffffff;
+.button:active {
+  transform: translateY(2px);
 }
 
-.button:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-}
+/* 태블릿 이상 크기 대응 */
+@media (min-width: 768px) {
+  .content {
+    max-width: 380px;  /* 너비 증가 */
+  }
 
-.button1:hover {
-  background-color: var(--primary-light);
-}
+  .mainTitle {
+    font-size: 1rem;
+  }
 
-.button2:hover {
-  background-color: #ffffff;
-}
+  .subTitle {
+    font-size: 2.6rem;  /* 크기 증가 */
+  }
 
-.button3:hover {
-  background-color: var(--primary-light);
+  .scheduleLabel {
+    font-size: 0.9rem;
+  }
+
+  .scheduleValue,
+  .timeValues {
+    font-size: 1rem;
+  }
+
+  .button {
+    padding: 1.1rem;
+    font-size: 1rem;
+  }
 }
