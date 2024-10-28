@@ -1,0 +1,70 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background);
+  padding: 2rem;
+  font-family: 'NanumSquare', sans-serif;
+}
+
+.actorCard {
+  display: flex;
+  background-color: var(--secondary);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(139, 0, 0, 0.1);
+}
+
+.imageWrapper {
+  position: relative;
+  width: 300px;
+  height: 400px;
+}
+
+.actorImage {
+  object-fit: cover;
+}
+
+.actorInfo {
+  padding: 2rem;
+  color: var(--foreground);
+}
+
+.actorName {
+  font-size: 2rem; /* 폰트 크기 증가 */
+}
+
+.roleTitle {
+  font-size: 1.5rem; /* 새로운 스타일 */
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.songsTitle {
+  font-size: 1.3rem; /* 폰트 크기 증가 */
+}
+
+.songsList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.songItem {
+  margin-bottom: 1rem;
+}
+
+.songTitle {
+  font-size: 1.1rem; /* 폰트 크기 증가 */
+}
+
+.songDescription {
+  font-size: 1rem; /* 폰트 크기 증가 */
+}
+
+.notFound {
+  color: var(--primary-light);
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 500;
+}

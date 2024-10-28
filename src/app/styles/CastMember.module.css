@@ -1,0 +1,39 @@
+.castMember {
+  display: block;
+  background-color: var(--secondary);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  font-family: 'NanumSquare', sans-serif;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  height: 350px;
+}
+
+.castMember:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(139, 0, 0, 0.2);
+}
+
+.image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.info {
+  padding: 1rem;
+}
+
+.name {
+  font-size: 1.2rem;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.role {
+  font-size: 1rem;
+  color: var(--accent);
+  font-weight: 500;
+}
