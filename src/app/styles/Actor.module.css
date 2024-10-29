@@ -147,10 +147,10 @@
 /* 모바일에서만 높이 제한 */
 @media (max-width: 767px) {
   .container {
-    height: 100%;
-    min-height: 100%;
-    max-height: 100vh;
-    overflow: auto;
+    height: calc(100vh - 40px);
+    min-height: calc(100vh - 40px);
+    max-height: calc(100vh - 40px);
+    overflow-y: auto;
   }
 }
 
