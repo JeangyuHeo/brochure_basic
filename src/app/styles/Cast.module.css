@@ -1,6 +1,6 @@
 .container {
   min-height: fit-content;
-  padding: 0.6rem;
+  padding: 2.5rem 0.6rem;
   background-color: var(--background);
 }
 
@@ -76,7 +76,7 @@
 
 @media (min-width: 768px) {
   .container {
-    padding: 0.8rem;
+    padding: 3rem 0.8rem;
   }
 
   .title {
