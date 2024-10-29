@@ -1,4 +1,14 @@
 import { CastMember } from '../types/types';
+import { getSongByTitleAndDescription } from './songs';
+
+// 각 배우의 노래 목록을 songs.ts의 Song 객체로 변환하는 helper 함수
+function getSongData(title: string, description: string) {
+  const songData = getSongByTitleAndDescription(title, description);
+  if (!songData) {
+    throw new Error(`Song not found: ${title} - ${description}`);
+  }
+  return songData;
+}
 
 export const castMembersPart1: CastMember[] = [
   {
@@ -14,8 +24,8 @@ export const castMembersPart1: CastMember[] = [
     role: "배우",
     image: "/images/total.jpg",
     songs: [
-      { title: "나는 나만의 것", description: "고재은 솔로" },
-      { title: "언제나 그대 곁에", description: "허진규, 고재은 듀엣" }
+      getSongData("나는 나만의 것", "고재은 솔로"),
+      getSongData("언제나 그대 곁에", "허진규, 고재은 듀엣")
     ]
   },
   {
@@ -24,9 +34,9 @@ export const castMembersPart1: CastMember[] = [
     role: "배우",
     image: "/images/total.jpg",
     songs: [
-      { title: "온 세상 내 것이었을 때", description: "김지선 솔로" },
-      { title: "Wizard and I", description: "김지선 솔로" },
-      { title: "On the Edge of time", description: "김지선, 신대건 듀엣" }
+      getSongData("온 세상 내 것이었을 때", "김지선 솔로"),
+      getSongData("Wizard and I", "김지선 솔로"),
+      getSongData("On the Edge of time", "김지선, 신대건 듀엣")
     ]
   },
   {
@@ -35,9 +45,9 @@ export const castMembersPart1: CastMember[] = [
     role: "배우",
     image: "/images/total.jpg",
     songs: [
-      { title: "모두의 세상", description: "류호용 솔로" },
-      { title: "너에게 선사하는 지옥", description: "류호용 솔로" },
-      { title: "The other sides", description: "최진훈, 류호용 듀엣" }
+      getSongData("모두의 세상", "류호용 솔로"),
+      getSongData("너에게 선사하는 지옥", "류호용 솔로"),
+      getSongData("The other sides", "최진훈, 류호용 듀엣")
     ]
   },
   {
@@ -46,9 +56,9 @@ export const castMembersPart1: CastMember[] = [
     role: "배우",
     image: "/images/total.jpg",
     songs: [
-      { title: "겟세마네", description: "신대건 솔로" },
-      { title: "Santa Fe", description: "신대건 솔로" },
-      { title: "On the Edge of time", description: "김지선, 신대건 듀엣" }
+      getSongData("겟세마네", "신대건 솔로"),
+      getSongData("Santa Fe", "신대건 솔로"),
+      getSongData("On the Edge of time", "김지선, 신대건 듀엣")
     ]
   },
   {
@@ -57,9 +67,9 @@ export const castMembersPart1: CastMember[] = [
     role: "배우",
     image: "/images/total.jpg",
     songs: [
-      { title: "데드맘", description: "이지현 솔로" },
-      { title: "나는 나를 말하는 사람", description: "이지현 솔로" },
-      { title: "First time in love", description: "허진규, 이지현 듀엣" }
+      getSongData("데드맘", "이지현 솔로"),
+      getSongData("나는 나를 말하는 사람", "이지현 솔로"),
+      getSongData("First time in love", "허진규, 이지현 듀엣")
     ]
   },
   {
@@ -68,9 +78,9 @@ export const castMembersPart1: CastMember[] = [
     role: "배우",
     image: "/images/total.jpg",
     songs: [
-      { title: "내 운명 피하고 싶어", description: "최진훈 솔로" },
-      { title: "사느냐 죽느냐", description: "최진훈 솔로" },
-      { title: "The other sides", description: "최진훈, 류호용 듀엣" }
+      getSongData("내 운명 피하고 싶어", "최진훈 솔로"),
+      getSongData("사느냐 죽느냐", "최진훈 솔로"),
+      getSongData("The other sides", "최진훈, 류호용 듀엣")
     ]
   },
   {
@@ -79,10 +89,10 @@ export const castMembersPart1: CastMember[] = [
     role: "배우",
     image: "/images/total.jpg",
     songs: [
-      { title: "Waving through a window", description: "허진규 솔로" },
-      { title: "그 눈을 떠", description: "허진규 솔로" },
-      { title: "언제나 그대 곁에", description: "허진규, 고재은 듀엣" },
-      { title: "First time in love", description: "허진규, 이지현 듀엣" }
+      getSongData("Waving through a window", "허진규 솔로"),
+      getSongData("그 눈을 떠", "허진규 솔로"),
+      getSongData("언제나 그대 곁에", "허진규, 고재은 듀엣"),
+      getSongData("First time in love", "허진규, 이지현 듀엣")
     ]
   },
   {
@@ -91,7 +101,7 @@ export const castMembersPart1: CastMember[] = [
     role: "배우",
     image: "/images/total.jpg",
     songs: [
-      { title: "A New Life", description: "홍수영 솔로" }
+      getSongData("A New Life", "홍수영 솔로")
     ]
   }
 ];
@@ -110,9 +120,9 @@ export const castMembersPart2: CastMember[] = [
     role: "배우",
     image: "/images/total.jpg",
     songs: [
-      { title: "I Dreamed a dream", description: "김명신 솔로" },
-      { title: "Never Enough", description: "김명신 솔로" },
-      { title: "On the Edge of time", description: "김명신, 허용훈 듀엣" }
+      getSongData("I Dreamed a dream", "김명신 솔로"),
+      getSongData("Never Enough", "김명신 솔로"),
+      getSongData("On the Edge of time", "김명신, 허용훈 듀엣")
     ]
   },
   {
@@ -121,10 +131,10 @@ export const castMembersPart2: CastMember[] = [
     role: "배우",
     image: "/images/total.jpg",
     songs: [
-      { title: "Till I hear you Sing", description: "최석우 솔로" },
-      { title: "난 괴물", description: "최석우 솔로" },
-      { title: "언제나 그대 곁에", description: "최석우, 장애리 듀엣" },
-      { title: "The other sides", description: "최석우, 허용훈 듀엣" }
+      getSongData("Till I hear you Sing", "최석우 솔로"),
+      getSongData("난 괴물", "최석우 솔로"),
+      getSongData("언제나 그대 곁에", "최석우, 장애리 듀엣"),
+      getSongData("The other sides", "최석우, 허용훈 듀엣")
     ]
   },
   {
@@ -133,10 +143,10 @@ export const castMembersPart2: CastMember[] = [
     role: "배우",
     image: "/images/total.jpg",
     songs: [
-      { title: "춤을 춰요 에스메랄다", description: "허용훈 솔로" },
-      { title: "지금 이 순간", description: "허용훈 솔로" },
-      { title: "On the Edge of time", description: "김명신, 허용훈 듀엣" },
-      { title: "The other sides", description: "최석우, 허용훈 듀엣" }
+      getSongData("춤을 춰요 에스메랄다", "허용훈 솔로"),
+      getSongData("지금 이 순간", "허용훈 솔로"),
+      getSongData("On the Edge of time", "김명신, 허용훈 듀엣"),
+      getSongData("The other sides", "최석우, 허용훈 듀엣")
     ]
   },
   {
@@ -145,9 +155,9 @@ export const castMembersPart2: CastMember[] = [
     role: "배우",
     image: "/images/total.jpg",
     songs: [
-      { title: "God don't make no Trash", description: "장애리 솔로" },
-      { title: "Always Starting over", description: "장애리 솔로" },
-      { title: "언제나 그대 곁에", description: "최석우, 장애리 듀엣" }
+      getSongData("God don't make no Trash", "장애리 솔로"),
+      getSongData("Always Starting over", "장애리 솔로"),
+      getSongData("언제나 그대 곁에", "최석우, 장애리 듀엣")
     ]
   },
   {
@@ -156,9 +166,9 @@ export const castMembersPart2: CastMember[] = [
     role: "배우",
     image: "/images/total.jpg",
     songs: [
-      { title: "사랑이야", description: "최유리 솔로" },
-      { title: "도쿄찬가", description: "최유리 솔로" },
-      { title: "그게 나의 전부란 걸", description: "최유리, 홍종완 듀엣" }
+      getSongData("사랑이야", "최유리 솔로"),
+      getSongData("도쿄찬가", "최유리 솔로"),
+      getSongData("그게 나의 전부란 걸", "최유리, 홍종완 듀엣")
     ]
   },
   {
@@ -167,8 +177,8 @@ export const castMembersPart2: CastMember[] = [
     role: "배우",
     image: "/images/total.jpg",
     songs: [
-      { title: "데스노트", description: "홍종완 솔로" },
-      { title: "그게 나의 전부란 걸", description: "최유리, 홍종완 듀엣" }
+      getSongData("데스노트", "홍종완 솔로"),
+      getSongData("그게 나의 전부란 걸", "최유리, 홍종완 듀엣")
     ]
   },
   {
@@ -177,7 +187,7 @@ export const castMembersPart2: CastMember[] = [
     role: "배우",
     image: "/images/total.jpg",
     songs: [
-      { title: "On My Own", description: "장은진 솔로" }
+      getSongData("On My Own", "장은진 솔로")
     ]
   }
 ];
