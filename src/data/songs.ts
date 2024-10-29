@@ -258,7 +258,7 @@ const songs: Song[] = [
   {
     id: 112,
     title: "나는 나를 말하는 사람",
-    description: "이지현 솔",
+    description: "이지현 솔로",
     image: "/images/total.jpg",
     musical: "",
     tags: [],
@@ -436,7 +436,7 @@ const songs: Song[] = [
     image: "/images/total.jpg",
     musical: "닥터 지바고",
     tags: ["전쟁속사랑", "유리와라라", "극적인만남"],
-    songDescription: "닥터지바고의 노래로 러시아혁명주의 세력에 붙잡혀 있다가 어렵게 탈출한 유리 지바고와 생사조차 알수 없었지만 그를 기다렸던 라라가 극적으로 만나 ���음을 확인하며 부르는 노래"
+    songDescription: "닥터지바고의 노래로 러시아혁명주의 세력에 붙잡혀 있다가 어렵게 탈출한 유리 지바고와 생사조차 알수 없었지만 그를 기다렸던 라라가 극적으로 만나 음을 확인하며 부르는 노래"
   },
   {
     id: 402,
