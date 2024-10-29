@@ -9,9 +9,6 @@ export default function Navigation() {
           SDS MUSICAL
         </Link>
         <div className={styles.links}>
-          <Link href="/song-list" className={styles.link}>
-            곡 순서
-          </Link>
           <Link href="/cast1" className={styles.link}>
             1부
           </Link>
