@@ -4,7 +4,9 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  min-height: calc(100vh - 40px);
+  height: calc(100vh - 40px);
+  margin-top: 40px;
+  overflow-y: auto;
 }
 
 .songCard {
