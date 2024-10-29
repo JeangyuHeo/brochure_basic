@@ -4,46 +4,44 @@
 @tailwind components;
 @tailwind utilities;
 
-/* 여기에 추가적인 전역 스타일을 작성할 수 있습니다 */
-
 :root {
   --background: #ffffff;
   --foreground: #333333;
-  --primary: #6a0000; /* 더 어두운 와인색 */
-  --primary-light: #8b0000; /* 이전의 primary 색상 */
-  --secondary: #f8f8f8; /* 매우 연한 회색 */
-  --accent: #4a0000; /* 가장 어두운 와인색 */
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #1a1a1a;
-    --foreground: #f0f0f0;
-    --secondary: #2a2a2a;
-  }
+  --primary: #6a0000;
+  --primary-light: #8b0000;
+  --secondary: #f8f8f8;
+  --accent: #4a0000;
+  --text-primary: #333333;
+  --text-secondary: #666666;
+  --text-accent: #8b0000;
+  --text-light: #999999;
 }
 
 body {
-  color: var(--foreground);
+  color: var(--text-primary);
   background: var(--background);
   font-family: 'NanumSquare', sans-serif;
   min-height: 100%;
   height: fit-content;
   display: flex;
   flex-direction: column;
+  letter-spacing: -0.3px;
 }
 
-html {
-  background-color: var(--background);
+h1, h2, h3 {
+  color: var(--primary);
+  font-weight: 700;
+  letter-spacing: -0.5px;
 }
 
-main {
-  flex: 1;
-  height: fit-content;
-  min-height: fit-content;
+.emphasis {
+  color: var(--text-accent);
+  font-weight: 600;
 }
 
-.pageContainer {
-  min-height: fit-content;
-  height: auto;
+.light-text {
+  color: var(--text-light);
+  font-weight: 400;
 }
+
+/* 나머지 스타일 유지 */

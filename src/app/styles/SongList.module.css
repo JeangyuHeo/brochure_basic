@@ -37,15 +37,16 @@
 }
 
 .partTitle {
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: var(--primary);
-  font-weight: 600;
+  font-weight: 700;
+  letter-spacing: -0.3px;
 }
 
 .partTime {
   font-size: 0.8rem;
-  color: var(--accent);
-  font-weight: 500;
+  color: var(--text-secondary);
+  letter-spacing: -0.2px;
 }
 
 .intermission {
@@ -100,15 +101,14 @@
 .songTitle {
   font-size: 0.85rem;
   color: var(--primary);
-  font-weight: 500;
-  transition: color 0.2s ease;
+  font-weight: 600;
+  letter-spacing: -0.3px;
 }
 
 .singer {
   font-size: 0.75rem;
-  color: var(--accent);
-  text-align: right;
-  transition: color 0.2s ease;
+  color: var(--text-secondary);
+  letter-spacing: -0.2px;
 }
 
 @media (min-width: 768px) {

@@ -6,6 +6,7 @@
   justify-content: center;
   align-items: flex-start;
   padding-top: 0.8rem;
+  padding-bottom: 2rem;
 }
 
 .actorCard {
@@ -86,16 +87,16 @@
 }
 
 .songTitle {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   color: var(--primary);
   font-weight: 600;
-  transition: color 0.2s ease;
+  letter-spacing: -0.3px;
 }
 
 .songDescription {
-  font-size: 0.8rem;
-  color: var(--accent);
-  transition: color 0.2s ease;
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  letter-spacing: -0.2px;
 }
 
 .songLink:hover .songTitle,

@@ -1,49 +1,51 @@
 .container {
-  height: 100vh;
-  background-color: #ffffff;
-  padding: 1rem 1rem;
-  overflow: hidden;
+  min-height: 100vh;
+  padding: 0;
+  background-color: var(--background);
   display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
 .content {
   max-width: 320px;
   width: 100%;
-  margin: 0 auto;
+  margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 0.8rem;
+  gap: 1.2rem;
+  padding: 0 1rem;
+  padding-top: 1.5rem;
 }
 
 /* 타이틀 섹션 */
 .titleSection {
   text-align: center;
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.5rem;
 }
 
 .mainTitle {
   font-size: 0.85rem;
-  color: #666666;
-  margin-bottom: 0.2rem;
-  font-weight: 500;
-  letter-spacing: 2px;
+  color: var(--accent);
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+  letter-spacing: 1px;
   text-transform: uppercase;
 }
 
 .subTitle {
-  font-size: 2rem;
-  color: #8B0000;
+  font-size: 1.8rem;
+  color: var(--primary);
   font-weight: 700;
-  margin-bottom: 0.2rem;
-  letter-spacing: -0.5px;
+  margin-bottom: 0.3rem;
+  letter-spacing: -0.3px;
 }
 
 .ordinal {
-  font-size: 0.8rem;
-  color: #BA4A4A;
+  font-size: 0.75rem;
+  color: var(--accent);
   font-weight: 500;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
 }
 
 /* 이미지 섹션 */
@@ -54,6 +56,7 @@
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(139, 0, 0, 0.08);
+  margin-bottom: 1.2rem;
 }
 
 .image {
@@ -65,17 +68,18 @@
 .scheduleCard {
   background-color: #ffffff;
   border-radius: 8px;
-  padding: 0.4rem 0.6rem;
+  padding: 1rem 1.2rem;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
   border: 1px solid #f0f0f0;
   margin: 0;
+  margin-bottom: 1.2rem;
 }
 
 .scheduleRow {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.25rem 0;
+  padding: 0.5rem 0;
   border-bottom: 1px solid #f5f5f5;
 }
 
@@ -85,34 +89,31 @@
 
 .scheduleLabel {
   font-size: 0.7rem;
-  color: #999999;
+  color: var(--accent);
   font-weight: 500;
-  letter-spacing: -0.2px;
+  letter-spacing: 0.5px;
 }
 
 .scheduleValue {
-  font-size: 0.75rem;
-  color: #333333;
+  font-size: 0.85rem;
+  color: var(--primary);
   font-weight: 600;
   letter-spacing: -0.2px;
 }
 
 .timeValues {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 0.1rem;
-  font-size: 0.75rem;
-  color: #333333;
+  font-size: 0.85rem;
+  color: var(--primary);
   font-weight: 600;
+  letter-spacing: -0.2px;
 }
 
 /* 버튼 그룹 */
 .buttonGroup {
   display: flex;
   flex-direction: column;
-  gap: 0.35rem;
-  margin-top: 0.15rem;
+  gap: 0.8rem;
+  margin-top: 0.5rem;
 }
 
 /* 첫 번째 버튼을 위한 컨테이너 */
@@ -128,14 +129,14 @@
 }
 
 .button {
-  padding: 0.5rem;
+  padding: 0.8rem;
   border-radius: 6px;
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   font-weight: 600;
   text-align: center;
   text-decoration: none;
   transition: all 0.2s ease;
-  letter-spacing: -0.3px;
+  letter-spacing: 0.2px;
 }
 
 .primary {
@@ -169,7 +170,7 @@
   }
 
   .subTitle {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 
   .scheduleLabel {
@@ -178,7 +179,7 @@
 
   .scheduleValue,
   .timeValues {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
   }
 
   .mainTitle {
@@ -190,6 +191,10 @@
   }
 
   .ordinal {
+    font-size: 0.8rem;
+  }
+
+  .button {
     font-size: 0.9rem;
   }
 }
