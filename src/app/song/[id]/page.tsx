@@ -3,9 +3,9 @@ import Image from 'next/image';
 import styles from '../../styles/Song.module.css';
 
 interface Props {
-  params: {
+  params: Promise<{
     id: string;
-  };
+  }>;
 }
 
 export default async function SongPage({ params }: Props) {
