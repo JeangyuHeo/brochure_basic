@@ -10,7 +10,8 @@ interface Props {
 
 export default async function SongPage({ params }: Props) {
   const resolvedParams = await params;
-  const song = getSongById(parseInt(resolvedParams.id));
+  const songId = parseInt(resolvedParams.id);
+  const song = getSongById(songId);
 
   if (!song) {
     return (

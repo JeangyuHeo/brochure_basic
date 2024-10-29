@@ -13,58 +13,12 @@
   --text-light: #999999;
 }
 
-* {
-  font-family: 'NanumSquare', sans-serif;
-  letter-spacing: -0.3px;
-}
-
 body {
   color: var(--text-primary);
   background: var(--background);
+  font-family: 'NanumSquare', sans-serif;
   min-height: 100%;
   height: fit-content;
   display: flex;
   flex-direction: column;
 }
-
-/* 제목 스타일 */
-h1, h2, h3 {
-  font-family: 'NanumSquare', sans-serif;
-  font-weight: 800;
-  letter-spacing: -0.5px;
-}
-
-/* 본문 텍스트 */
-p, span, div {
-  font-family: 'NanumSquare', sans-serif;
-  font-weight: 400;
-  letter-spacing: -0.3px;
-}
-
-/* 강조 텍스트 */
-.emphasis {
-  font-weight: 700;
-  color: var(--text-accent);
-}
-
-/* 작은 텍스트 */
-.small {
-  font-size: 0.85rem;
-  color: var(--text-secondary);
-}
-
-/* 버튼 텍스트 */
-button, .button {
-  font-family: 'NanumSquare', sans-serif;
-  font-weight: 700;
-  letter-spacing: -0.2px;
-}
-
-/* 태그 텍스트 */
-.tag {
-  font-family: 'NanumSquare', sans-serif;
-  font-weight: 600;
-  letter-spacing: 0;
-}
-
-/* 나머지 스타일 유지 */

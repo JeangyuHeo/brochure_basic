@@ -92,13 +92,11 @@
   font-size: 0.85rem;
   color: var(--primary);
   font-weight: 600;
-  letter-spacing: -0.3px;
 }
 
 .songDescription {
   font-size: 0.75rem;
   color: var(--text-secondary);
-  letter-spacing: -0.2px;
 }
 
 .songLink:hover .songTitle,
