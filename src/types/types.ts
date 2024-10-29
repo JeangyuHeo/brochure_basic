@@ -1,6 +1,11 @@
 export interface Song {
+  id: number;
   title: string;
   description: string;
+  image: string;
+  musical: string;
+  tags: string[];
+  songDescription: string;
 }
 
 export interface CastMember {
