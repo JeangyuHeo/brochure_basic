@@ -1,6 +1,6 @@
 .pageContainer {
-  min-height: 100vh;
-  padding: 1rem;
+  min-height: fit-content;
+  padding: 0.8rem;
   background-color: var(--background);
   display: flex;
   justify-content: center;
@@ -9,99 +9,158 @@
 
 .container {
   width: 100%;
-  max-width: 600px;
+  max-width: 500px;
   background-color: var(--secondary);
-  border-radius: 15px;
-  padding: 1.5rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .title {
-  font-size: 2rem;
+  font-size: 1.2rem;
   color: var(--primary);
   text-align: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.2rem;
   font-weight: 700;
 }
 
-.timeInfo {
-  text-align: center;
-  margin-bottom: 1.5rem;
-  font-size: 0.9rem;
-  color: var(--accent);
+.partSection {
+  margin-bottom: 1.2rem;
 }
 
-.performanceList {
+.partHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.6rem;
+  padding: 0 0.4rem;
+}
+
+.partTitle {
+  font-size: 1rem;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.partTime {
+  font-size: 0.8rem;
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.intermission {
+  text-align: center;
+  padding: 0.8rem;
+  margin: 1.2rem 0;
+  background-color: var(--primary);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.intermissionText {
+  font-size: 0.9rem;
+  color: white;
+  font-weight: 600;
+  font-style: italic;
+  letter-spacing: 0.5px;
+}
+
+.intermissionTime {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.songsList {
   list-style: none;
   padding: 0;
 }
 
-.performanceItem {
-  background-color: var(--background);
-  border-radius: 10px;
-  padding: 1rem;
-  margin-bottom: 0.8rem;
+.songItem {
   display: grid;
-  grid-template-columns: auto 1fr auto;
-  gap: 0.8rem;
+  grid-template-columns: 1.8rem 1fr auto;
   align-items: center;
+  gap: 0.6rem;
+  padding: 0.5rem;
+  background-color: var(--background);
+  margin-bottom: 0.3rem;
+  border-radius: 6px;
+  transition: all 0.2s ease;
 }
 
-.time {
-  font-size: 1rem;
+.songNumber {
+  font-size: 0.75rem;
+  color: var(--accent);
   font-weight: 600;
+  text-align: center;
+  transition: color 0.2s ease;
+}
+
+.songTitle {
+  font-size: 0.85rem;
   color: var(--primary);
+  font-weight: 500;
+  transition: color 0.2s ease;
 }
 
-.artist {
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: var(--primary);
-}
-
-.duration {
-  font-size: 0.9rem;
+.singer {
+  font-size: 0.75rem;
   color: var(--accent);
-}
-
-.description {
-  grid-column: 1 / -1;
-  font-size: 0.8rem;
-  color: var(--accent);
+  text-align: right;
+  transition: color 0.2s ease;
 }
 
 @media (min-width: 768px) {
   .container {
-    max-width: 800px;
-    padding: 2rem;
+    padding: 1.2rem;
   }
 
   .title {
-    font-size: 2.8rem;
-  }
-
-  .timeInfo {
-    font-size: 1rem;
-  }
-
-  .performanceItem {
-    padding: 1.2rem;
-    gap: 1rem;
-  }
-
-  .time {
-    font-size: 1.2rem;
-  }
-
-  .artist {
     font-size: 1.4rem;
   }
 
-  .duration {
-    font-size: 1rem;
+  .partTitle {
+    font-size: 1.1rem;
   }
 
-  .description {
+  .partTime {
     font-size: 0.9rem;
   }
+
+  .intermissionText {
+    font-size: 0.9rem;
+  }
+
+  .intermissionTime {
+    font-size: 0.8rem;
+  }
+
+  .songTitle {
+    font-size: 0.9rem;
+  }
+
+  .singer {
+    font-size: 0.8rem;
+  }
+}
+
+.songLink {
+  text-decoration: none;
+  display: block;
+  transition: all 0.2s ease;
+}
+
+.songLink:hover {
+  transform: translateX(3px);
+}
+
+.songLink:hover .songItem {
+  background-color: var(--primary);
+}
+
+.songLink:hover .songNumber,
+.songLink:hover .songTitle,
+.songLink:hover .singer {
+  color: white;
 }

@@ -6,8 +6,7 @@ export const castMembersPart1: CastMember[] = [
     name: "장설아",
     role: "연출",
     image: "/images/total.jpg",
-    songs: [
-    ],
+    songs: [],
   },
   {
     id: 2,
@@ -15,9 +14,8 @@ export const castMembersPart1: CastMember[] = [
     role: "배우",
     image: "/images/total.jpg",
     songs: [
-      { title: "첫 등장", description: "1막 솔로 곡" },
-      { title: "내 마음의 소리", description: "2막 듀엣 곡" },
-      { title: "마지막 인사", description: "엔딩 곡" }
+      { title: "나는 나만의 것", description: "고재은 솔로" },
+      { title: "언제나 그대 곁에", description: "허진규, 고재은 듀엣" }
     ]
   },
   {
@@ -26,9 +24,9 @@ export const castMembersPart1: CastMember[] = [
     role: "배우",
     image: "/images/total.jpg",
     songs: [
-      { title: "새로운 시작", description: "1막 앙상블 곡" },
-      { title: "사랑의 고백", description: "2막 솔로 곡" },
-      { title: "우리의 약속", description: "3막 듀엣 곡" }
+      { title: "온 세상 내 것이었을 때", description: "김지선 솔로" },
+      { title: "Wizard and I", description: "김지선 솔로" },
+      { title: "On the Edge of time", description: "김지선, 신대건 듀엣" }
     ]
   },
   {
@@ -37,9 +35,9 @@ export const castMembersPart1: CastMember[] = [
     role: "배우",
     image: "/images/total.jpg",
     songs: [
-      { title: "꿈을 향해", description: "1막 솔로 곡" },
-      { title: "우정의 노래", description: "2막 앙상블 곡" },
-      { title: "새로운 내일", description: "3막 솔로 곡" }
+      { title: "모두의 세상", description: "류호용 솔로" },
+      { title: "너에게 선사하는 지옥", description: "류호용 솔로" },
+      { title: "The other sides", description: "최진훈, 류호용 듀엣" }
     ]
   },
   {
@@ -48,9 +46,9 @@ export const castMembersPart1: CastMember[] = [
     role: "배우",
     image: "/images/total.jpg",
     songs: [
-      { title: "첫 만남", description: "1막 듀엣 곡" },
-      { title: "고뇌의 시간", description: "2막 솔로 곡" },
-      { title: "희망의 빛", description: "3막 앙상블 곡" }
+      { title: "겟세마네", description: "신대건 솔로" },
+      { title: "Santa Fe", description: "신대건 솔로" },
+      { title: "On the Edge of time", description: "김지선, 신대건 듀엣" }
     ]
   },
   {
@@ -59,9 +57,9 @@ export const castMembersPart1: CastMember[] = [
     role: "배우",
     image: "/images/total.jpg",
     songs: [
-      { title: "설레는 마음", description: "1막 솔로 곡" },
-      { title: "갈등의 순간", description: "2막 듀엣 곡" },
-      { title: "화해의 노래", description: "3막 앙상블 곡" }
+      { title: "데드맘", description: "이지현 솔로" },
+      { title: "나는 나를 말하는 사람", description: "이지현 솔로" },
+      { title: "First time in love", description: "허진규, 이지현 듀엣" }
     ]
   },
   {
@@ -70,9 +68,9 @@ export const castMembersPart1: CastMember[] = [
     role: "배우",
     image: "/images/total.jpg",
     songs: [
-      { title: "용기의 노래", description: "1막 앙상블 곡" },
-      { title: "고독한 밤", description: "2막 솔로 곡" },
-      { title: "승리의 함성", description: "3막 듀엣 곡" }
+      { title: "내 운명 피하고 싶어", description: "최진훈 솔로" },
+      { title: "사느냐 죽느냐", description: "최진훈 솔로" },
+      { title: "The other sides", description: "최진훈, 류호용 듀엣" }
     ]
   },
   {
@@ -81,9 +79,10 @@ export const castMembersPart1: CastMember[] = [
     role: "배우",
     image: "/images/total.jpg",
     songs: [
-      { title: "첫 도전", description: "1막 솔로 곡" },
-      { title: "친구와 함께", description: "2막 듀엣 곡" },
-      { title: "미래를 향해", description: "3막 앙상블 곡" }
+      { title: "Waving through a window", description: "허진규 솔로" },
+      { title: "그 눈을 떠", description: "허진규 솔로" },
+      { title: "언제나 그대 곁에", description: "허진규, 고재은 듀엣" },
+      { title: "First time in love", description: "허진규, 이지현 듀엣" }
     ]
   },
   {
@@ -92,9 +91,7 @@ export const castMembersPart1: CastMember[] = [
     role: "배우",
     image: "/images/total.jpg",
     songs: [
-      { title: "새로운 세상", description: "1막 듀엣 곡" },
-      { title: "고민의 시간", description: "2막 솔로 곡" },
-      { title: "함께 가는 길", description: "3막 앙상블 곡" }
+      { title: "A New Life", description: "홍수영 솔로" }
     ]
   }
 ];
@@ -105,11 +102,7 @@ export const castMembersPart2: CastMember[] = [
     name: "장설아",
     role: "연출",
     image: "/images/total.jpg",
-    songs: [
-      { title: "두 번째 막", description: "2부 오프닝 곡" },
-      { title: "무대의 열정", description: "중간 하이라이트 곡" },
-      { title: "마지막 인사", description: "피날레 곡" }
-    ]
+    songs: [],
   },
   {
     id: 102,
@@ -117,42 +110,44 @@ export const castMembersPart2: CastMember[] = [
     role: "배우",
     image: "/images/total.jpg",
     songs: [
-      { title: "새로운 시작", description: "2부 1막 솔로 곡" },
-      { title: "우정의 노래", description: "2막 듀엣 곡" },
-      { title: "꿈의 무대", description: "3막 앙상블 곡" }
+      { title: "I Dreamed a dream", description: "김명신 솔로" },
+      { title: "Never Enough", description: "김명신 솔로" },
+      { title: "On the Edge of time", description: "김명신, 허용훈 듀엣" }
     ]
   },
   {
     id: 103,
-    name: "장애리",
-    role: "배우",
-    image: "/images/total.jpg",
-    songs: [
-      { title: "첫 등장", description: "2부 1막 듀엣 곡" },
-      { title: "내 마음의 소리", description: "2막 솔로 곡" },
-      { title: "함께 하는 노래", description: "3막 앙상블 곡" }
-    ]
-  },
-  {
-    id: 104,
-    name: "장은진",
-    role: "배우",
-    image: "/images/total.jpg",
-    songs: [
-      { title: "꿈을 향해", description: "2부 1막 앙상블 곡" },
-      { title: "사랑의 고백", description: "2막 솔로 곡" },
-      { title: "우리의 이야기", description: "3막 듀엣 곡" }
-    ]
-  },
-  {
-    id: 105,
     name: "최석우",
     role: "배우",
     image: "/images/total.jpg",
     songs: [
-      { title: "새로운 도전", description: "2부 1막 솔로 곡" },
-      { title: "친구와 함께", description: "2막 듀엣 곡" },
-      { title: "희망의 노래", description: "3막 앙상블 곡" }
+      { title: "Till I hear you Sing", description: "최석우 솔로" },
+      { title: "난 괴물", description: "최석우 솔로" },
+      { title: "언제나 그대 곁에", description: "최석우, 장애리 듀엣" },
+      { title: "The other sides", description: "최석우, 허용훈 듀엣" }
+    ]
+  },
+  {
+    id: 104,
+    name: "허용훈",
+    role: "배우",
+    image: "/images/total.jpg",
+    songs: [
+      { title: "춤을 춰요 에스메랄다", description: "허용훈 솔로" },
+      { title: "지금 이 순간", description: "허용훈 솔로" },
+      { title: "On the Edge of time", description: "김명신, 허용훈 듀엣" },
+      { title: "The other sides", description: "최석우, 허용훈 듀엣" }
+    ]
+  },
+  {
+    id: 105,
+    name: "장애리",
+    role: "배우",
+    image: "/images/total.jpg",
+    songs: [
+      { title: "God don't make no Trash", description: "장애리 솔로" },
+      { title: "Always Starting over", description: "장애리 솔로" },
+      { title: "언제나 그대 곁에", description: "최석우, 장애리 듀엣" }
     ]
   },
   {
@@ -161,31 +156,28 @@ export const castMembersPart2: CastMember[] = [
     role: "배우",
     image: "/images/total.jpg",
     songs: [
-      { title: "설레는 첫 만남", description: "2부 1막 듀엣 곡" },
-      { title: "고뇌의 시간", description: "2막 솔로 곡" },
-      { title: "새로운 내일", description: "3막 앙상블 곡" }
+      { title: "사랑이야", description: "최유리 솔로" },
+      { title: "도쿄찬가", description: "최유리 솔로" },
+      { title: "그게 나의 전부란 걸", description: "최유리, 홍종완 듀엣" }
     ]
   },
   {
     id: 107,
-    name: "허용훈",
-    role: "배우",
-    image: "/images/total.jpg",
-    songs: [
-      { title: "용기의 발걸음", description: "2부 1막 솔로 곡" },
-      { title: "우정의 힘", description: "2막 듀엣 곡" },
-      { title: "승리의 노래", description: "3막 앙상블 곡" }
-    ]
-  },
-  {
-    id: 108,
     name: "홍종완",
     role: "배우",
     image: "/images/total.jpg",
     songs: [
-      { title: "새로운 시작", description: "2부 1막 앙상블 곡" },
-      { title: "고독한 밤", description: "2막 솔로 곡" },
-      { title: "함께 가는 길", description: "3막 듀엣 곡" }
+      { title: "데스노트", description: "홍종완 솔로" },
+      { title: "그게 나의 전부란 걸", description: "최유리, 홍종완 듀엣" }
+    ]
+  },
+  {
+    id: 108,
+    name: "장은진",
+    role: "배우",
+    image: "/images/total.jpg",
+    songs: [
+      { title: "On My Own", description: "장은진 솔로" }
     ]
   }
 ];
