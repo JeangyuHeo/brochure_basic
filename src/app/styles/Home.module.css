@@ -5,7 +5,7 @@
   overflow: hidden;
   display: flex;
   align-items: flex-start;
-  padding-top: env(safe-area-inset-top, 1rem);
+  padding-top: env(safe-area-inset-top, 2rem);
 }
 
 .content {
@@ -15,7 +15,7 @@
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
-  padding-top: 1rem;
+  padding-top: 0.5rem;
 }
 
 /* 타이틀 섹션 */
@@ -221,11 +221,11 @@
     min-height: 100vh;
     max-height: 100vh;
     overflow: hidden;
-    padding-top: max(env(safe-area-inset-top), 1rem);
+    padding-top: max(env(safe-area-inset-top), 2.5rem);
   }
 
   .content {
-    height: calc(100vh - env(safe-area-inset-top) - 2rem);
+    height: calc(100vh - env(safe-area-inset-top) - 3rem);
     overflow-y: auto;
     padding-top: 0.5rem;
     -webkit-overflow-scrolling: touch;
