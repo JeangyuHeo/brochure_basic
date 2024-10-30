@@ -12,7 +12,7 @@ export default function SongList() {
     { title: "언제나 그대 곁에", singer: "허진규, 고재은" },
     { title: "Santa Fe", singer: "신대건" },
     { title: "나는 나를 말하는 사람", singer: "이지현" },
-    { title: "온 세상 내것이었을 때", singer: "김지선" },
+    { title: "온 세상 내 것이었을 때", singer: "김지선" },
     { title: "너에게 선사하는 지옥", singer: "류호용" },
     { title: "Waving through a window", singer: "허진규" },
     { title: "On the Edge of time", singer: "김지선, 신대건" },

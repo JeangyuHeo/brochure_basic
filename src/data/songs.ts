@@ -15,17 +15,17 @@ const songs: Song[] = [
     title: "Waving through a window",
     description: "허진규 솔로",
     image: "/images/total.jpg",
-    musical: "",
-    tags: [],
-    songDescription: ""
+    musical: "디어 에반 핸슨",
+    tags: ["연기아님", "소외된청소년", "완곡가능?"],
+    songDescription: "사회불안장애를 가진 주인공 에반 핸슨이 자신의 고립된 상황을 표현하는 노래. 마치 유리창 너머로 다른 사람들의 삶을 바라보는 것처럼, 세상과 단절된 채 살아가는 자신의 모습을 표현. 에반은 SNS로 가득한 현대 사회에서 소통하고 싶지만 그러지 못하는 자신의 모습을 '창문 너머로 손을 흔들기만 하는 사람'으로 표현하며, 누군가에게 보여지고 싶은 간절한 마음을 호소"
   },
   {
     id: 102,
     title: "그 눈을 떠",
     description: "허진규 솔로",
     image: "/images/total.jpg",
-    musical: "",
-    tags: [],
+    musical: "웃는 남자",
+    tags: ["", "", ""],
     songDescription: ""
   },
   {
@@ -51,9 +51,9 @@ const songs: Song[] = [
     title: "온 세상 내 것이었을 때",
     description: "김지선 솔로",
     image: "/images/total.jpg",
-    musical: "",
-    tags: [],
-    songDescription: ""
+    musical: "엘리자벳",
+    tags: ["죽음과의만남", "엘리자벳", "토드와의이별"],
+    songDescription: "엘리자벳이 죽음(토드)과 이별하며 자신의 삶을 되돌아보는 노래입니다. 한때는 모든 것을 가졌던 자신이 지금은 모든 것을 잃어버렸다는 것을 한탄하며, 죽음과의 관계를 정리하고 마지막 순간을 맞이하는 장면입니다."
   },
   {
     id: 106,
@@ -142,18 +142,18 @@ const songs: Song[] = [
     title: "언제나 그대 곁에",
     description: "허진규, 고재은 듀엣",
     image: "/images/total.jpg",
-    musical: "",
-    tags: [],
-    songDescription: ""
+    musical: "몬테크리스토",
+    tags: ["", "", ""],
+    songDescription: "억울한 누명을 쓰고 체포된 단테스와 그의 약혼녀 메르세데스가 서로에 대한 영원한 사랑을 맹세하는 두 사람의 애절한 감정이 드러나는 노래"
   },
   {
     id: 202,
     title: "First time in love",
     description: "허진규, 이지현 듀엣",
     image: "/images/total.jpg",
-    musical: "",
-    tags: [],
-    songDescription: ""
+    musical: "어쩌면 해피엔딩",
+    tags: ["사랑에빠진로봇", "설렘가득", "순수상큼발랄"],
+    songDescription: "사랑이란 감정을 알지 못하는 로봇 올리버와 클레어가 함께 시간을 보내며 사랑의 감정을 이해하고 빠져가는 모습을 그린 노래"
   },
   {
     id: 203,
