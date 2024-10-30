@@ -47,7 +47,7 @@ export const castMembersPart1: CastMember[] = [
     songs: [
       getSongData("모두의 세상", "류호용 솔로"),
       getSongData("너에게 선사하는 지옥", "류호용 솔로"),
-      getSongData("The other sides", "최진훈, 류호용 듀엣")
+      getSongData("The other side", "최진훈, 류호용 듀엣")
     ]
   },
   {
@@ -80,7 +80,7 @@ export const castMembersPart1: CastMember[] = [
     songs: [
       getSongData("내 운명 피하고 싶어", "최진훈 솔로"),
       getSongData("사느냐 죽느냐", "최진훈 솔로"),
-      getSongData("The other sides", "최진훈, 류호용 듀엣")
+      getSongData("The other side", "최진훈, 류호용 듀엣")
     ]
   },
   {
@@ -134,7 +134,7 @@ export const castMembersPart2: CastMember[] = [
       getSongData("Till I hear you Sing", "최석우 솔로"),
       getSongData("난 괴물", "최석우 솔로"),
       getSongData("언제나 그대 곁에", "최석우, 장애리 듀엣"),
-      getSongData("The other sides", "최석우, 허용훈 듀엣")
+      getSongData("The other side", "최석우, 허용훈 듀엣")
     ]
   },
   {
@@ -146,7 +146,7 @@ export const castMembersPart2: CastMember[] = [
       getSongData("춤을 춰요 에스메랄다", "허용훈 솔로"),
       getSongData("지금 이 순간", "허용훈 솔로"),
       getSongData("On the Edge of time", "김명신, 허용훈 듀엣"),
-      getSongData("The other sides", "최석우, 허용훈 듀엣")
+      getSongData("The other side", "최석우, 허용훈 듀엣")
     ]
   },
   {

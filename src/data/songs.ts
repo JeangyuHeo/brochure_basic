@@ -9,152 +9,6 @@ export interface Song {
 }
 
 const songs: Song[] = [
-  // 1부 출연진의 노래들
-  {
-    id: 1,
-    title: "첫 번째 곡",
-    description: "오프닝 넘버",
-    image: "/images/total.jpg",
-    musical: "",
-    tags: [],
-    songDescription: ""
-  },
-  {
-    id: 2,
-    title: "주인공의 아리아",
-    description: "솔로 곡",
-    image: "/images/total.jpg",
-    musical: "",
-    tags: [],
-    songDescription: ""
-  },
-  {
-    id: 3,
-    title: "첫 등장",
-    description: "1막 솔로 곡",
-    image: "/images/total.jpg",
-    musical: "",
-    tags: [],
-    songDescription: ""
-  },
-  {
-    id: 4,
-    title: "내 마음의 소리",
-    description: "2막 듀엣 곡",
-    image: "/images/total.jpg",
-    musical: "",
-    tags: [],
-    songDescription: ""
-  },
-  {
-    id: 5,
-    title: "마지막 인사",
-    description: "엔딩 곡",
-    image: "/images/total.jpg",
-    musical: "",
-    tags: [],
-    songDescription: ""
-  },
-  {
-    id: 6,
-    title: "새로운 시작",
-    description: "1막 앙상블 곡",
-    image: "/images/total.jpg",
-    musical: "",
-    tags: [],
-    songDescription: ""
-  },
-  {
-    id: 7,
-    title: "사랑의 고백",
-    description: "2막 솔로 곡",
-    image: "/images/total.jpg",
-    musical: "",
-    tags: [],
-    songDescription: ""
-  },
-  {
-    id: 8,
-    title: "우리의 약속",
-    description: "3막 듀엣 곡",
-    image: "/images/total.jpg",
-    musical: "",
-    tags: [],
-    songDescription: ""
-  },
-  {
-    id: 9,
-    title: "꿈을 향해",
-    description: "1막 솔로 곡",
-    image: "/images/total.jpg",
-    musical: "",
-    tags: [],
-    songDescription: ""
-  },
-  {
-    id: 10,
-    title: "우정의 노래",
-    description: "2막 앙상블 곡",
-    image: "/images/total.jpg",
-    musical: "",
-    tags: [],
-    songDescription: ""
-  },
-  {
-    id: 11,
-    title: "새로운 내일",
-    description: "3막 솔로 곡",
-    image: "/images/total.jpg",
-    musical: "",
-    tags: [],
-    songDescription: ""
-  },
-  // 2부 출연진의 노래들
-  {
-    id: 12,
-    title: "두 번째 막",
-    description: "2부 오프닝 곡",
-    image: "/images/total.jpg",
-    musical: "",
-    tags: [],
-    songDescription: ""
-  },
-  {
-    id: 13,
-    title: "무대의 열정",
-    description: "중간 하이라이트 곡",
-    image: "/images/total.jpg",
-    musical: "",
-    tags: [],
-    songDescription: ""
-  },
-  {
-    id: 14,
-    title: "설레는 마음",
-    description: "1막 솔로 곡",
-    image: "/images/total.jpg",
-    musical: "",
-    tags: [],
-    songDescription: ""
-  },
-  {
-    id: 15,
-    title: "갈등의 순간",
-    description: "2막 듀엣 곡",
-    image: "/images/total.jpg",
-    musical: "",
-    tags: [],
-    songDescription: ""
-  },
-  {
-    id: 16,
-    title: "화해의 노래",
-    description: "3막 앙상블 곡",
-    image: "/images/total.jpg",
-    musical: "",
-    tags: [],
-    songDescription: ""
-  },
   // 1부 솔로 곡들
   {
     id: 101,
@@ -233,18 +87,18 @@ const songs: Song[] = [
     title: "겟세마네",
     description: "신대건 솔로",
     image: "/images/total.jpg",
-    musical: "",
-    tags: [],
-    songDescription: ""
+    musical: "지저스크라이스트슈퍼스타",
+    tags: ["고통받는예수", "고통받는성대", "박은태"],
+    songDescription: "예수가 잡혀가기 전날 밤, 겟세마네 동산에서 홀로 하나님을 향해 부르짖는 예수의 노래. 그동안의 고통과 죽음의 이유에 대한 의문으로 가득찬 예수를 표현"
   },
   {
     id: 110,
     title: "Santa Fe",
     description: "신대건 솔로",
     image: "/images/total.jpg",
-    musical: "",
-    tags: [],
-    songDescription: ""
+    musical: "뉴시스",
+    tags: ["디즈니", "분노", "희망"],
+    songDescription: "주인공이자 신문배달원인 소년 잭이 친구에게 뉴욕을 떠나 산타페로 향할거라는 자신의 꿈을 말하는 노래"
   },
   {
     id: 111,
@@ -303,7 +157,7 @@ const songs: Song[] = [
   },
   {
     id: 203,
-    title: "The other sides",
+    title: "The other side",
     description: "최진훈, 류호용 듀엣",
     image: "/images/total.jpg",
     musical: "",
@@ -325,9 +179,9 @@ const songs: Song[] = [
     title: "I Dreamed a dream",
     description: "김명신 솔로",
     image: "/images/total.jpg",
-    musical: "",
-    tags: [],
-    songDescription: ""
+    musical: "레미제라블",
+    tags: ["팡틴의절망", "슬픔눈물회한"],
+    songDescription: "레미제라블에서 코제트의 엄마 팡틴이 공장에서 쫓겨난후 자신의 젊은날의 꿈과 사랑을 돌아보며 현재의 절망과 체념운 이야기하는 노래"
   },
   {
     id: 302,
@@ -344,17 +198,17 @@ const songs: Song[] = [
     description: "최석우 솔로",
     image: "/images/total.jpg",
     musical: "",
-    tags: [],
-    songDescription: ""
+    tags: ["오페라의유령2", "크리스틴은어디에", "집착과사랑의경계"],
+    songDescription: "팬텀이 과거에 헤어진 크리스틴을 그리워하며 부르는 넘버입니다. 오랜 세월이 흘렀지만 크리스틴을 향한 사랑은 식지 않았고 그녀의 노래소리가 없는 삶은 아무런 의미가 없다는 그의 고백은 곡의 절정에서 폭발적으로 표현되며, 크리스틴을 향한 팬텀의 집착에 가까운 사랑과 상처를 잘 나타냅니다."
   },
   {
     id: 304,
     title: "난 괴물",
     description: "최석우 솔로",
     image: "/images/total.jpg",
-    musical: "",
-    tags: [],
-    songDescription: ""
+    musical: "프랑켄슈타인",
+    tags: ["3옥파샵", "창조와파멸", "누워서시작", "이름갖고싶어"],
+    songDescription: "프랑켄슈타인 박사가 만든 괴물이 처음으로 자신이 인간이 아닌 괴물임을 자각하며 부르는 넘버입니다. 노래하는 장면은 자신을 창조한 프랑켄슈타인과 자신을 외면하는 세상에 대한 괴물의 분노와 고뇌가 드러나면서 관객에게 괴물의 강렬한 감정이 전달되는 중요한 장면입니다."
   },
   {
     id: 305,
@@ -379,18 +233,18 @@ const songs: Song[] = [
     title: "God don't make no Trash",
     description: "장애리 솔로",
     image: "/images/total.jpg",
-    musical: "",
-    tags: [],
-    songDescription: ""
+    musical: "베어 더 뮤지컬",
+    tags: ["피터 괴롭히지마라", "뒤에 나있다", "입틀막 위로송"],
+    songDescription: "피터는 비밀리에 남자친구와 교재하고 있습니다. 커밍아웃을 하고 싶지만 남자친구는 거부를 하고, 엄마는 이 사실을 짐작하지만 외면합니다. 이 넘버는 지도교사 샨텔 수녀가 이 사실을 눈치채고 피터가 잘못된 것이 아니라고 위로해 줍니다."
   },
   {
     id: 308,
     title: "Always Starting over",
     description: "장애리 솔로",
     image: "/images/total.jpg",
-    musical: "",
-    tags: [],
-    songDescription: ""
+    musical: "If Then",
+    tags: ["그래! 결심했어!", "폐활량 절실", "Else 어쩌면 다시 만날지도?"],
+    songDescription: "뮤지컬 If Then은 일과 사랑 둘 중 하나를 선택한 주인공의 인생이 각각 어떻게 펼쳐지는지 동시에 보여주는 작품입니다. 이 넘버는 그중 사랑을 선택한 인생에서 결국 남편의 죽음을 맞이하여 깊은 슬픔에 빠진 리즈의 심정을 노래합니다.결국 사랑은 끝났지만 자신의 선택을 후회하지 않고, 앞으로의 생을 당당하게 살기로 결심한 그녀의 노래를 들어주세요."
   },
   {
     id: 309,
@@ -443,18 +297,18 @@ const songs: Song[] = [
     title: "언제나 그대 곁에",
     description: "최석우, 장애리 듀엣",
     image: "/images/total.jpg",
-    musical: "",
-    tags: [],
-    songDescription: ""
+    musical: "몬테크리스토",
+    tags: ["비대면듀엣", "둘만 서로가 안보임"],
+    songDescription: "억울한 누명을 쓰고 감옥에 갇힌 단테스와 그의 약혼녀 메르세데스가 서로를 그리워하며 부르는 넘버입니다. 서로 다른공간에 있지만, 언제나 서로의 곁을 지켜줄것이라는 간절한 마음을 표현한 곡입니다."
   },
   {
     id: 403,
-    title: "The other sides",
+    title: "The other side",
     description: "최석우, 허용훈 듀엣",
     image: "/images/total.jpg",
-    musical: "",
-    tags: [],
-    songDescription: ""
+    musical: "위대한 쇼맨",
+    tags: ["밀당의귀재", "브로맨스", "턴의끝판왕"],
+    songDescription: "서커스 사업가인 바넘이 상류층 사회의 관습에 얽매여 있는 필립에게 자유와 모험이 있는 자신의 쇼에 합류하도록 설득하는 넘버입니다. 처음에는 거절하지만 바넘의 설득에 조금씩 마음이 열리는 필립의 모습을 보면서 함께 즐기시길 바랍니다."
   },
   {
     id: 404,

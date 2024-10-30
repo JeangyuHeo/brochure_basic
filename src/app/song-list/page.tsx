@@ -20,7 +20,7 @@ export default function SongList() {
     { title: "A New Life", singer: "홍수영" },
     { title: "나는 나만의 것", singer: "고재은" },
     { title: "데드맘", singer: "이지현" },
-    { title: "The other sides", singer: "최진훈, 류호용" },
+    { title: "The other side", singer: "최진훈, 류호용" },
     { title: "Wizard and I", singer: "김지선" },
     { title: "First time in love", singer: "허진규, 이지현" },
     { title: "모두의 세상", singer: "류호용" },
@@ -45,7 +45,7 @@ export default function SongList() {
     { title: "데스노트", singer: "홍종완" },
     { title: "God don't make no Trash", singer: "장애리" },
     { title: "Never Enough", singer: "김명신" },
-    { title: "The other sides", singer: "최석우, 허용훈" }
+    { title: "The other side", singer: "최석우, 허용훈" }
   ];
 
   const getSongLink = (title: string, singer: string) => {
