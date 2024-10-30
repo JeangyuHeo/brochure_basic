@@ -51,9 +51,9 @@ const songs: Song[] = [
     title: "온 세상 내 것이었을 때",
     description: "김지선 솔로",
     image: "/images/total.jpg",
-    musical: "엘리자벳",
-    tags: ["죽음과의만남", "엘리자벳", "토드와의이별"],
-    songDescription: "엘리자벳이 죽음(토드)과 이별하며 자신의 삶을 되돌아보는 노래입니다. 한때는 모든 것을 가졌던 자신이 지금은 모든 것을 잃어버렸다는 것을 한탄하며, 죽음과의 관계를 정리하고 마지막 순간을 맞이하는 장면입니다."
+    musical: "",
+    tags: ["", "", ""],
+    songDescription: ""
   },
   {
     id: 106,
