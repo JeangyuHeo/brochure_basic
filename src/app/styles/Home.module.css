@@ -5,7 +5,7 @@
   overflow: hidden;
   display: flex;
   align-items: flex-start;
-  padding-top: 2rem;
+  padding-top: env(safe-area-inset-top, 1rem);
 }
 
 .content {
@@ -121,11 +121,17 @@
   flex-direction: column;
   gap: 0.3rem;
   margin-top: 0.2rem;
+  max-width: 320px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* 첫 번째 버튼을 위한 컨테이너 */
 .primaryButtonContainer {
   width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
 }
 
 /* 보조 버튼을 위한 컨테이너 */
@@ -133,6 +139,8 @@
   display: flex;
   gap: 0.3rem;
   width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
 }
 
 .button {
@@ -213,13 +221,26 @@
     min-height: 100vh;
     max-height: 100vh;
     overflow: hidden;
-    padding-top: 1.5rem;
+    padding-top: max(env(safe-area-inset-top), 1rem);
   }
 
   .content {
-    height: calc(100vh - 40px);
+    height: calc(100vh - env(safe-area-inset-top) - 2rem);
     overflow-y: auto;
     padding-top: 0.5rem;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .primaryButtonContainer {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .secondaryButtonContainer {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
   }
 }
 
