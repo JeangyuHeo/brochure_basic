@@ -16,6 +16,7 @@ export default function CastMember({ member }: CastMemberProps) {
             src={member.image} 
             alt={member.name} 
             fill
+            loading="lazy"
             sizes="(max-width: 768px) 160px, 250px"
             className={styles.image}
           />

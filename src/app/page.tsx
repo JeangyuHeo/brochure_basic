@@ -17,9 +17,11 @@ export default function Home() {
         <div className={styles.imageContainer}>
           <Image
             src="/images/total.jpg"
-            alt="SDS 뮤지컬"
+            alt="공연 포스터"
             fill
             priority
+            placeholder="blur"
+            blurDataURL="data:image/jpeg;base64,/9j..."
             className={styles.image}
           />
         </div>
