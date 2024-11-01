@@ -2,6 +2,7 @@
   padding: 0.5rem;
   min-height: 100vh;
   background-color: var(--background);
+  padding-top: 4rem;
 }
 
 .title {
@@ -118,6 +119,7 @@
 @media (min-width: 768px) {
   .container {
     padding: 2rem;
+    padding-top: 5rem;
   }
 
   .title {
