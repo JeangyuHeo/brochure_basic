@@ -22,7 +22,7 @@ export const castMembersPart1: CastMember[] = [
     id: 2,
     name: "고재은",
     role: "배우",
-    image: "/images/total.jpg",
+    image: "/images/gje.jpg",
     songs: [
       getSongData("나는 나만의 것", "고재은 솔로"),
       getSongData("언제나 그대 곁에", "허진규, 고재은 듀엣")
@@ -43,7 +43,7 @@ export const castMembersPart1: CastMember[] = [
     id: 4,
     name: "류호용",
     role: "배우",
-    image: "/images/total.jpg",
+    image: "/images/rhy.jpg",
     songs: [
       getSongData("모두의 세상", "류호용 솔로"),
       getSongData("너에게 선사하는 지옥", "류호용 솔로"),
@@ -65,7 +65,7 @@ export const castMembersPart1: CastMember[] = [
     id: 6,
     name: "이지현",
     role: "배우",
-    image: "/images/total.jpg",
+    image: "/images/ljh.jpg",
     songs: [
       getSongData("데드맘", "이지현 솔로"),
       getSongData("나는 나를 말하는 사람", "이지현 솔로"),
@@ -99,7 +99,7 @@ export const castMembersPart1: CastMember[] = [
     id: 9,
     name: "홍수영",
     role: "배우",
-    image: "/images/total.jpg",
+    image: "/images/hsy.jpg",
     songs: [
       getSongData("A New Life", "홍수영 솔로")
     ]
@@ -129,7 +129,7 @@ export const castMembersPart2: CastMember[] = [
     id: 103,
     name: "최석우",
     role: "배우",
-    image: "/images/total.jpg",
+    image: "/images/csw.jpg",
     songs: [
       getSongData("Till I hear you Sing", "최석우 솔로"),
       getSongData("난 괴물", "최석우 솔로"),
@@ -141,7 +141,7 @@ export const castMembersPart2: CastMember[] = [
     id: 104,
     name: "허용훈",
     role: "배우",
-    image: "/images/total.jpg",
+    image: "/images/hyh.jpg",
     songs: [
       getSongData("춤을 춰요 에스메랄다", "허용훈 솔로"),
       getSongData("지금 이 순간", "허용훈 솔로"),
@@ -153,7 +153,7 @@ export const castMembersPart2: CastMember[] = [
     id: 105,
     name: "장애리",
     role: "배우",
-    image: "/images/total.jpg",
+    image: "/images/jer.jpg",
     songs: [
       getSongData("God don't make no Trash", "장애리 솔로"),
       getSongData("Always Starting over", "장애리 솔로"),
@@ -175,7 +175,7 @@ export const castMembersPart2: CastMember[] = [
     id: 107,
     name: "홍종완",
     role: "배우",
-    image: "/images/total.jpg",
+    image: "/images/hjw.jpg",
     songs: [
       getSongData("데스노트", "홍종완 솔로"),
       getSongData("그게 나의 전부란 걸", "최유리, 홍종완 듀엣")

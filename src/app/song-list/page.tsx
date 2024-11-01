@@ -26,7 +26,8 @@ export default function SongList() {
     { title: "모두의 세상", singer: "류호용" },
     { title: "그 눈을 떠", singer: "허진규" },
     { title: "사느냐 죽느냐", singer: "최진훈" },
-    { title: "겟세마네", singer: "신대건" }
+    { title: "겟세마네", singer: "신대건" },
+    { title: "You will be found", singer: "전체" }
   ];
 
   const part2Songs: SongInfo[] = [
@@ -45,11 +46,17 @@ export default function SongList() {
     { title: "데스노트", singer: "홍종완" },
     { title: "God don't make no Trash", singer: "장애리" },
     { title: "Never Enough", singer: "김명신" },
-    { title: "The other side", singer: "최석우, 허용훈" }
+    { title: "The other side", singer: "최석우, 허용훈" },
+    { title: "You will be found", singer: "전체" }
   ];
 
   const getSongLink = (title: string, singer: string) => {
-    const description = singer.includes(',') ? `${singer} 듀엣` : `${singer} 솔로`;
+    let description;
+    if (singer === '전체') {
+      description = '전체 단체곡';
+    } else {
+      description = singer.includes(',') ? `${singer} 듀엣` : `${singer} 솔로`;
+    }
     const song = getSongByTitleAndDescription(title, description);
     return song ? `/song/${song.id}` : '#';
   };

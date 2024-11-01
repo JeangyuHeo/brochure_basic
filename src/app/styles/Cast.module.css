@@ -1,23 +1,64 @@
 .container {
-  min-height: fit-content;
-  padding: 2.5rem 0.6rem;
+  padding: 0.5rem;
+  min-height: 100vh;
   background-color: var(--background);
 }
 
 .title {
   text-align: center;
   color: var(--primary);
-  font-size: 1.1rem;
-  margin-bottom: 1rem;
-  font-weight: 800;
+  font-size: 1.3rem;
+  margin: 1rem 0 1.5rem 0;
+}
+
+.groupPhotoContainer {
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto 2rem auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: var(--secondary);
+  position: relative;
+}
+
+.groupPhoto {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.groupPhoto:hover {
+  transform: scale(1.02);
+}
+
+.castSection {
+  position: relative;
+  padding-top: 2rem;
+  margin-top: 1rem;
+}
+
+.castSection::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+  background: var(--primary);
+  border-radius: 2px;
 }
 
 .castGrid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 0.6rem;
-  padding: 0;
-  max-width: 500px;
+  padding: 0 0.5rem;
+  width: 100%;
+  max-width: 600px;
   margin: 0 auto;
 }
 
@@ -76,16 +117,35 @@
 
 @media (min-width: 768px) {
   .container {
-    padding: 3rem 0.8rem;
+    padding: 2rem;
   }
 
   .title {
-    font-size: 1.3rem;
-    margin-bottom: 1.2rem;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+
+  .groupPhotoContainer {
+    width: 85%;
+    max-width: 800px;
+    margin: 0 auto 4rem auto;
+  }
+
+  .castSection {
+    padding-top: 3rem;
+    margin-top: 2rem;
+  }
+
+  .castSection::before {
+    width: 80px;
+    height: 4px;
   }
 
   .castGrid {
-    gap: 0.8rem;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 1.5rem;
+    padding: 0;
+    max-width: 900px;
   }
 
   .info {
@@ -98,5 +158,14 @@
 
   .role {
     font-size: 0.8rem;
+  }
+
+  .groupPhoto:hover {
+    transform: scale(1.02);
+  }
+
+  .groupPhotoContainer {
+    max-width: 600px;
+    margin: 0 auto 3rem auto;
   }
 }
