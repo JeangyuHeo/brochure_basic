@@ -9,7 +9,7 @@ interface CastMemberProps {
 
 export default function CastMember({ member }: CastMemberProps) {
   return (
-    <Link href={`/actor/${member.id}`} className={styles.castMember}>
+    <Link href={`/actor/${member.id}`} className={styles.castMember} style={{ textDecoration: 'none' }}>
       <div className={styles.imageContainer}>
         <Image
           src={member.image}

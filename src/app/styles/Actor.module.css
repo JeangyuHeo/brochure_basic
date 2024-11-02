@@ -152,6 +152,30 @@
   .actorCard {
     margin: 0.5rem auto;
   }
+
+  .imageWrapper {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3/4;
+  }
+
+  .actorImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .actorInfo {
+    padding: 1rem;
+  }
+
+  .actorName {
+    font-size: 1.2rem;
+  }
+
+  .roleTitle {
+    font-size: 1rem;
+  }
 }
 
 /* 기존 스타일에 추가 */

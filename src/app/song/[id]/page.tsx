@@ -1,5 +1,4 @@
 import { getSongById } from '../../../data/songs';
-import Image from 'next/image';
 import styles from '../../styles/Song.module.css';
 
 interface Props {
@@ -24,15 +23,6 @@ export default async function SongPage({ params }: Props) {
   return (
     <div className={styles.container}>
       <div className={styles.songCard}>
-        <div className={styles.imageWrapper}>
-          <Image
-            src={song.image}
-            alt={song.title}
-            fill
-            priority
-            className={styles.songImage}
-          />
-        </div>
         <div className={styles.songInfo}>
           <h1 className={styles.songTitle}>{song.title}</h1>
           <p className={styles.description}>{song.description}</p>
