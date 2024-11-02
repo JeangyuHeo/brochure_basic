@@ -2,6 +2,7 @@ import { castMembersPart1, castMembersPart2 } from '../../../data/castMembers';
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from '../../styles/Actor.module.css';
+import { CastMember, DirectorExperience } from '../../../types/types';
 
 interface Props {
   params: Promise<{
@@ -41,7 +42,7 @@ export default async function ActorPage({ params }: Props) {
           {isDirector && actor.directorExperiences ? (
             <div className={styles.experienceList}>
               <h2 className={styles.experienceTitle}>연출 경력</h2>
-              {actor.directorExperiences.map((exp, index) => (
+              {actor.directorExperiences.map((exp: DirectorExperience, index: number) => (
                 <div key={index} className={styles.experienceItem}>
                   <span className={styles.experienceYear}>{exp.year}</span>
                   <span className={styles.experienceShow}>{exp.title}</span>

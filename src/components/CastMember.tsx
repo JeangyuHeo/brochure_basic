@@ -1,15 +1,10 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from '../app/styles/CastMember.module.css';
+import type { CastMember } from '../types/types';
 
 interface CastMemberProps {
-  member: {
-    id: number;
-    name: string;
-    role: string;
-    image: string;
-    songs: any[];
-  };
+  member: CastMember;
 }
 
 export default function CastMember({ member }: CastMemberProps) {
