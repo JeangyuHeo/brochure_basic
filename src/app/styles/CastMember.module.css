@@ -66,3 +66,52 @@
     font-size: 1rem;
   }
 }
+
+.experiences {
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid rgba(106, 0, 0, 0.1);
+}
+
+.experience {
+  margin-bottom: 0.4rem;
+  text-align: center;
+}
+
+.experience:last-child {
+  margin-bottom: 0;
+}
+
+.experienceYear {
+  font-size: 0.75rem;
+  color: var(--accent);
+  margin: 0;
+  font-weight: 600;
+}
+
+.experienceTitle {
+  font-size: 0.8rem;
+  color: var(--primary);
+  margin: 0.1rem 0;
+  font-weight: 600;
+}
+
+.experienceRole {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .experienceYear {
+    font-size: 0.8rem;
+  }
+
+  .experienceTitle {
+    font-size: 0.85rem;
+  }
+
+  .experienceRole {
+    font-size: 0.8rem;
+  }
+}

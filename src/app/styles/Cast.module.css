@@ -116,6 +116,16 @@
   opacity: 0.9;
 }
 
+.directorSection {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto 2rem auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.6rem;
+  padding: 0 0.5rem;
+}
+
 @media (min-width: 768px) {
   .container {
     padding: 2rem;
@@ -169,5 +179,12 @@
   .groupPhotoContainer {
     max-width: 600px;
     margin: 0 auto 3rem auto;
+  }
+
+  .directorSection {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 1.5rem;
+    padding: 0;
+    max-width: 900px;
   }
 }

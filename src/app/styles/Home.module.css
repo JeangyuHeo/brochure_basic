@@ -1,10 +1,10 @@
 .container {
-  height: 100vh;
+  min-height: 100vh;
   background-color: #ffffff;
   padding: 0.8rem 1rem 1rem 1rem;
-  overflow: hidden;
   display: flex;
   align-items: flex-start;
+  justify-content: center;
   padding-top: env(safe-area-inset-top, 2rem);
 }
 
@@ -178,6 +178,7 @@
 @media (min-width: 768px) {
   .content {
     max-width: 340px;
+    padding-top: 1.5rem;
   }
 
   .mainTitle {
@@ -212,6 +213,12 @@
   .button {
     font-size: 0.85rem;
     padding: 0.55rem;
+  }
+
+  .container {
+    min-height: 100vh;
+    overflow: auto;
+    padding-top: 3rem;
   }
 }
 
