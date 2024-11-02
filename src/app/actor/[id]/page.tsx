@@ -2,7 +2,7 @@ import { castMembersPart1, castMembersPart2 } from '../../../data/castMembers';
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from '../../styles/Actor.module.css';
-import { CastMember, DirectorExperience } from '../../../types/types';
+import type { DirectorExperience } from '../../../types/types';
 
 interface Props {
   params: Promise<{
