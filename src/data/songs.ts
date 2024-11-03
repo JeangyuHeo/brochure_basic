@@ -16,7 +16,7 @@ const songs: Song[] = [
     description: "허진규 솔로",
     image: "/images/total.jpg",
     musical: "디어 에반 핸슨",
-    tags: ["연기아님", "소외된청소년", "완곡가능?"],
+    tags: ["연기아님", "디어에반허슨", "완곡가능?"],
     songDescription: "사회불안장애를 가진 주인공 에반 핸슨이 자신의 고립된 상황을 표현하는 노래. 마치 유리창 너머로 다른 사람들의 삶을 바라보는 것처럼, 세상과 단절된 채 살아가는 자신의 모습을 표현. 에반은 SNS로 가득한 현대 사회에서 소통하고 싶지만 그러지 못하는 자신의 모습을 '창문 너머로 손을 흔들기만 하는 사람'으로 표현하며, 누군가에게 보여지고 싶은 간절한 마음을 호소"
   },
   {
@@ -24,9 +24,9 @@ const songs: Song[] = [
     title: "그 눈을 떠",
     description: "허진규 솔로",
     image: "/images/total.jpg",
-    musical: "웃는 남자",
-    tags: ["", "", ""],
-    songDescription: ""
+    musical: "웃는남자",
+    tags: ["이래선눈못떠", "우는남자", "이래보여도귀족"],
+    songDescription: "영국의 최고 권력자들이자 집권계급만 참석할 수 있는 상원 의원회에 참석한 그윈플렌은 자신들의 이익을 위한 법만 만드는 의원들에게 또 다른 세상을 돌아봐 달라고 간청한다."
   },
   {
     id: 103,
@@ -143,7 +143,7 @@ const songs: Song[] = [
     description: "허진규, 고재은 듀엣",
     image: "/images/total.jpg",
     musical: "몬테크리스토",
-    tags: ["", "", ""],
+    tags: ["남자는감옥", "여자는밖", "서로쳐다보는거아님"],
     songDescription: "억울한 누명을 쓰고 체포된 단테스와 그의 약혼녀 메르세데스가 서로에 대한 영원한 사랑을 맹세하는 두 사람의 애절한 감정이 드러나는 노래"
   },
   {
@@ -169,9 +169,9 @@ const songs: Song[] = [
     title: "On the Edge of time",
     description: "김지선, 신대건 듀엣",
     image: "/images/total.jpg",
-    musical: "",
-    tags: [],
-    songDescription: ""
+    musical: "닥터지바고",
+    tags: ["전쟁속사랑", "유리와라라", "극적인만남"],
+    songDescription: "닥터지바고의 노래로 러시아혁명주의 세력에 붙잡혀 있다가 어렵게 탈출한 유리 지바고와 생사조차 알수 없었지만 그를 기다렸던 라라가 극적으로 만나 마음을 확인하며 부르는 노래"
   },
   // 2부 솔로 곡들
   {
