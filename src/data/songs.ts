@@ -197,7 +197,7 @@ const songs: Song[] = [
     title: "Till I hear you Sing",
     description: "최석우 솔로",
     image: "/images/total.jpg",
-    musical: "",
+    musical: "Love Never Dies",
     tags: ["오페라의유령2", "크리스틴은어디에", "집착과사랑의경계"],
     songDescription: "팬텀이 과거에 헤어진 크리스틴을 그리워하며 부르는 넘버입니다. 오랜 세월이 흘렀지만 크리스틴을 향한 사랑은 식지 않았고 그녀의 노래소리가 없는 삶은 아무런 의미가 없다는 그의 고백은 곡의 절정에서 폭발적으로 표현되며, 크리스틴을 향한 팬텀의 집착에 가까운 사랑과 상처를 잘 나타냅니다."
   },
@@ -316,7 +316,7 @@ const songs: Song[] = [
     description: "최유리, 홍종완 듀엣",
     image: "/images/total.jpg",
     musical: "번지점프를 하다",
-    tags: [],
+    tags: ["설레는키차이", "사랑해", "꺄악뽀뽀해"],
     songDescription: "이 넘버는 인우와 태희가 서로의 마음을 확인하고 난 후 인우가 군 입대 통보가 왔다고 이야기하자 데이트 하던 도중에 태희가 화가나서 인우를 버리고 가버립니다. 인우가 헤어진 자리에서 태희가 돌아오기를 기다리자 태희가 돌아오고 나서 부르는 노래입니다."
   },
   {
