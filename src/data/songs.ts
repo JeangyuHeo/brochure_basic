@@ -51,18 +51,18 @@ const songs: Song[] = [
     title: "온 세상 내 것이었을 때",
     description: "김지선 솔로",
     image: "/images/total.jpg",
-    musical: "",
-    tags: ["", "", ""],
-    songDescription: ""
+    musical: "몬테크리스토",
+    tags: ["아련", "추억", "잊지못할첫사랑"],
+    songDescription: "약혼자 ‘에드몬드‘(몬테크리스토)가 죽은 줄 알고 ’몬데고‘와 결혼한 메르세데스. 과거 진실로 사랑했던 ’에드몬드‘와의 추억을 회상하고 그리워하며 부르는 넘버"
   },
   {
     id: 106,
     title: "Wizard and I",
     description: "김지선 솔로",
     image: "/images/total.jpg",
-    musical: "",
-    tags: [],
-    songDescription: ""
+    musical: "위키드",
+    tags: ["설렘", "최애마법사님", "해낼거야"],
+    songDescription: "엘파바가 드디어 자신의 재능을 알아봐 주고 이해해줄 마법사와 만날 수 있는 가능성이 생기자 그 설렘을 담아 부르는 넘버"
   },
   {
     id: 107,
@@ -123,9 +123,9 @@ const songs: Song[] = [
     title: "나는 나만의 것",
     description: "고재은 솔로",
     image: "/images/total.jpg",
-    musical: "",
-    tags: [],
-    songDescription: ""
+    musical: "엘리자벳",
+    tags: ["나는야곤듀", "자유를원해", "이뿌지?"],
+    songDescription: "황제와 결혼하여 들어간 황실에서 시어머니의 간섭과 황제와의 갈등, 엄격한 규율 등으로 인해 답답함을 느끼고 자유을 갈망하는 넘버"
   },
   {
     id: 114,
@@ -160,9 +160,9 @@ const songs: Song[] = [
     title: "The other side",
     description: "최진훈, 류호용 듀엣",
     image: "/images/total.jpg",
-    musical: "",
-    tags: [],
-    songDescription: ""
+    musical: "위대한 쇼맨",
+    tags: ["밀당의귀재", "브로맨스", "턴의끝판왕"],
+    songDescription: "서커스 사업가인 바넘이 상류층 사회의 관습에 얽매여 있는 필립에게 자유와 모험이 있는 자신의 쇼에 합류하도록 설득는 넘버입니다. 처음에는 거절하지만 바넘의 설득에 조금씩 마음이 열리는 필립의 모습을 보면서 함께 즐기시길 바랍니다."
   },
   {
     id: 204,
@@ -252,7 +252,7 @@ const songs: Song[] = [
     description: "최유리 솔로",
     image: "/images/total.jpg",
     musical: "황태자 루돌프",
-    tags: [],
+    tags: ["낭만", "달콤한사랑", "First time in love"],
     songDescription: "'사랑이야' 넘버는 눈이 내리는 왕궁과 성당 앞에서 황태자 루돌프와 마리 베체라의 사랑이 무르익는 장면입니다. 낭만적인 분위기 속에서 두 사람의 사랑이 깊어지는 노래입니다."
   },
   {
@@ -261,7 +261,7 @@ const songs: Song[] = [
     description: "최유리 솔로",
     image: "/images/total.jpg",
     musical: "사의찬미",
-    tags: [],
+    tags: ["연기왕", "도꾜", "대사어떻게외워..?"],
     songDescription: "'도쿄찬가A'는 뮤지컬 사의찬미에서 사내와 우진이 이야기를 시작하며 부르는 넘버입니다. 극의 시작을 설명하는 노래로, 이 스토리가 그냥 사내의 이야기인지 아니면 우진이 현재 처한 현실인지 헷갈리게 만드는 넘버입니다.이번 공연에서는 사내가 아닌 심덕이 사내의 대사를 대신합니다."
   },
   {
@@ -278,9 +278,9 @@ const songs: Song[] = [
     title: "On My Own",
     description: "장은진 솔로",
     image: "/images/total.jpg",
-    musical: "",
-    tags: [],
-    songDescription: ""
+    musical: "레미제라블",
+    tags: ["짝사랑", "나홀로", "가제트는알아도코제트는몰라!"],
+    songDescription: "에포닌은 혁명군에 가담하여 활동하는 청년 마리우스 퐁메르시를 짝사랑하는데, 에포닌이 On my own을 부르기 이전에, 마리우스와 코제트가 우연히 만나, 서로 사랑에 빠지게 된다. 그리고 어느날 마리우스는 코제트에게 전해달라며 에포닌에게 편지를 준다. 마리우스를 사랑하지만, 코제트를 사랑하는 마리우스를 보면서 가슴 아파하며 부르는 넘버이다."
   },
   // 2부 듀엣/그룹 곡들
   {
