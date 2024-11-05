@@ -39,7 +39,7 @@ export default function SongList() {
     { title: "On the Edge of time", singer: "김명신, 허용훈" },
     { title: "God don't make no Trash", singer: "장애리" },
     { title: "On My Own", singer: "장은진" },
-    { title: "그게 나의 전부라는 걸", singer: "최유리, 홍종완" },
+    { title: "그게 나의 전부란 걸", singer: "최유리, 홍종완" },
     { title: "춤을 춰요 에스메랄다", singer: "허용훈" },
     { title: "난 괴물", singer: "최석우" },
     { title: "도쿄찬가", singer: "최유리" },
