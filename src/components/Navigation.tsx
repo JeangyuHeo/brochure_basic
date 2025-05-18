@@ -9,12 +9,12 @@ export default function Navigation() {
           SDS MUSICAL
         </Link>
         <div className={styles.links}>
-          <Link href="/cast1" className={styles.link}>
+          {/* <Link href="/cast1" className={styles.link}>
             1부
           </Link>
           <Link href="/cast2" className={styles.link}>
             2부
-          </Link>
+          </Link> */}
         </div>
       </div>
     </nav>

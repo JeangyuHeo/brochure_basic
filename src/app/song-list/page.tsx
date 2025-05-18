@@ -9,45 +9,38 @@ interface SongInfo {
 
 export default function SongList() {
   const part1Songs: SongInfo[] = [
-    { title: "언제나 그대 곁에", singer: "허진규, 고재은" },
-    { title: "Santa Fe", singer: "신대건" },
-    { title: "나는 나를 말하는 사람", singer: "이지현" },
-    { title: "온 세상 내 것이었을 때", singer: "김지선" },
-    { title: "너에게 선사하는 지옥", singer: "류호용" },
-    { title: "Waving through a window", singer: "허진규" },
-    { title: "On the Edge of time", singer: "김지선, 신대건" },
-    { title: "내 운명 피하고 싶어", singer: "최진훈" },
-    { title: "A New Life", singer: "홍수영" },
-    { title: "나는 나만의 것", singer: "고재은" },
-    { title: "데드맘", singer: "이지현" },
-    { title: "The other side", singer: "최진훈, 류호용" },
-    { title: "Wizard and I", singer: "김지선" },
-    { title: "First time in love", singer: "허진규, 이지현" },
-    { title: "모두의 세상", singer: "류호용" },
-    { title: "그 눈을 떠", singer: "허진규" },
-    { title: "사느냐 죽느냐", singer: "최진훈" },
-    { title: "겟세마네", singer: "신대건" },
-    { title: "You will be found", singer: "전체" }
+    { title: "What is this feeling", singer: "김명신, 장애리" },
+    { title: "Dancing through life", singer: "허진규" },
+    { title: "Proud of your boy", singer: "최진훈" },
+    { title: "사랑은 마치", singer: "최유리" },
+    { title: "My Strongest Suit", singer: "장애리" },
+    { title: "A step too far", singer: "조재혁, 김지선, 박지현" },
+    { title: "Memphis in Live", singer: "최석우" },
+    { title: "Memory", singer: "박지현" },
+    { title: "Firework", singer: "김지선" },
+    { title: "Come What May", singer: "최진훈, 장유리" },
+    { title: "Knowing me Knowing you", singer: "조재혁" },
+    { title: "Shine", singer: "최현지" },
+    { title: "Me and the sky", singer: "김명신" },
+    { title: "그림자는 길어지고", singer: "최석우, 허진규" }
   ];
 
   const part2Songs: SongInfo[] = [
-    { title: "언제나 그대 곁에", singer: "최석우, 장애리" },
-    { title: "지금 이 순간", singer: "허용훈" },
-    { title: "I Dreamed a dream", singer: "김명신" },
-    { title: "사랑이야", singer: "최유리" },
-    { title: "Till I hear you Sing", singer: "최석우" },
-    { title: "On the Edge of time", singer: "김명신, 허용훈" },
-    { title: "God don't make no Trash", singer: "장애리" },
-    { title: "On My Own", singer: "장은진" },
-    { title: "그게 나의 전부란 걸", singer: "최유리, 홍종완" },
-    { title: "춤을 춰요 에스메랄다", singer: "허용훈" },
-    { title: "난 괴물", singer: "최석우" },
-    { title: "도쿄찬가", singer: "최유리" },
-    { title: "Always Starting over", singer: "장애리" },
-    { title: "데스노트", singer: "홍종완" },
-    { title: "Never Enough", singer: "김명신" },
-    { title: "The other side", singer: "최석우, 허용훈" },
-    { title: "You will be found", singer: "전체" }
+    { title: "Breathe", singer: "최현지" },
+    { title: "거인을 데려와", singer: "최진훈" },
+    { title: "Alone", singer: "허진규" },
+    { title: "영원한 생명", singer: "박지현" },
+    { title: "Take me as I am", singer: "조재혁, 최유리" },
+    { title: "If I had wings ", singer: "장애리" },
+    { title: "Defying Gravity", singer: "장유리" },
+    { title: "그 어디에", singer: "최석우" },
+    { title: "행복을 병 속에 담는 법", singer: "최유리" },
+    { title: "내가 춤추고 싶을 때", singer: "최현지, 허진규" },
+    { title: "마지막 순간", singer: "김지선" },
+    { title: "Confrontation(지킬 앤 하이드)", singer: "조재혁" },
+    { title: "내 안의 괴물", singer: "김명신" },
+    { title: "Confrontation(레미제라블)", singer: "최석우, 최진훈" },
+    { title: "Raise you up", singer: "전체" }
   ];
 
   const getSongLink = (title: string, singer: string) => {
@@ -69,7 +62,7 @@ export default function SongList() {
         <div className={styles.partSection}>
           <div className={styles.partHeader}>
             <h2 className={styles.partTitle}>1부</h2>
-            <span className={styles.partTime}>16:00 - 17:30</span>
+            <span className={styles.partTime}>17:00 - 18:00</span>
           </div>
           <ul className={styles.songsList}>
             {part1Songs.map((song, index) => (
@@ -90,13 +83,13 @@ export default function SongList() {
 
         <div className={styles.intermission}>
           <span className={styles.intermissionText}>Intermission</span>
-          <span className={styles.intermissionTime}>17:30 - 18:00</span>
+          <span className={styles.intermissionTime}>18:00 - 18:10</span>
         </div>
 
         <div className={styles.partSection}>
           <div className={styles.partHeader}>
             <h2 className={styles.partTitle}>2부</h2>
-            <span className={styles.partTime}>18:00 - 19:30</span>
+            <span className={styles.partTime}>18:10 - 19:20</span>
           </div>
           <ul className={styles.songsList}>
             {part2Songs.map((song, index) => (

@@ -219,3 +219,144 @@ export const castMembersPart2: CastMember[] = [
     ]
   }
 ];
+
+export const castMembersAll: CastMember[] = [
+  {
+    id: 201,
+    name: "장설아",
+    role: "연출",
+    image: "/images/jsa.jpg",
+    songs: []
+  },
+  {
+    id: 202,
+    name: "박선영",
+    role: "진행",
+    image: "/images/placeholder.jpg",
+    songs: []
+  },
+  {
+    id: 203,
+    name: "김명신",
+    role: "배우",
+    image: "/images/kms.jpg",
+    songs: [
+      getSongData("What is this feeling", "김명신, 장애리 듀엣"),
+      getSongData("Me and the sky", "김명신 솔로"),
+      getSongData("내 안의 괴물", "김명신 솔로")
+    ]
+  },
+  {
+    id: 204,
+    name: "김지선",
+    role: "배우",
+    image: "/images/kjs.jpg",
+    songs: [
+      getSongData("A step too far", "조재혁, 김지선, 박지현 듀엣"),
+      getSongData("Firework", "김지선 솔로"),
+      getSongData("마지막 순간", "김지선 솔로")
+    ]
+  },
+  {
+    id: 205,
+    name: "조재혁",
+    role: "배우",
+    image: "/images/jjh.jpg",
+    songs: [
+      getSongData("A step too far", "조재혁, 김지선, 박지현 듀엣"),
+      getSongData("Knowing me Knowing you", "조재혁 솔로"),
+      getSongData("Take me as I am", "조재혁, 최유리 듀엣"),
+      getSongData("Confrontation(지킬 앤 하이드)", "조재혁 솔로")
+    ]
+  },
+  {
+    id: 206,
+    name: "장애리",
+    role: "배우",
+    image: "/images/jer.jpg",
+    songs: [
+      getSongData("What is this feeling", "김명신, 장애리 듀엣"),
+      getSongData("My Strongest Suit", "장애리 솔로"),
+      getSongData("If I had wings ", "장애리 솔로")
+    ]
+  },
+  {
+    id: 207,
+    name: "박지현",
+    role: "배우",
+    image: "/images/pjh.jpg",
+    songs: [
+      getSongData("A step too far", "조재혁, 김지선, 박지현 듀엣"),
+      getSongData("Memory", "박지현 솔로"),
+      getSongData("영원한 생명", "박지현 솔로")
+    ]
+  },
+  {
+    id: 208,
+    name: "장유리",
+    role: "배우",
+    image: "/images/jyr.jpg",
+    songs: [
+      getSongData("Come What May", "최진훈, 장유리 듀엣"),
+      getSongData("Defying Gravity", "장유리 솔로")
+    ]
+  },
+  {
+    id: 209,
+    name: "허진규",
+    role: "배우",
+    image: "/images/hjg.jpg",
+    songs: [
+      getSongData("Dancing through life", "허진규 솔로"),
+      getSongData("Alone", "허진규 솔로"),
+      getSongData("내가 춤추고 싶을 때", "최현지, 허진규 듀엣"),
+      getSongData("그림자는 길어지고", "최석우, 허진규 듀엣")
+    ]
+  },
+  {
+    id: 210,
+    name: "최석우",
+    role: "배우",
+    image: "/images/csw.jpg",
+    songs: [
+      getSongData("Memphis in Live", "최석우 솔로"),
+      getSongData("그 어디에", "최석우 솔로"),
+      getSongData("그림자는 길어지고", "최석우, 허진규 듀엣"),
+      getSongData("Confrontation(레미제라블)", "최석우, 최진훈 듀엣")
+    ]
+  },
+  {
+    id: 211,
+    name: "최유리",
+    role: "배우",
+    image: "/images/cyr.jpg",
+    songs: [
+      getSongData("사랑은 마치", "최유리 솔로"),
+      getSongData("Take me as I am", "조재혁, 최유리 듀엣"),
+      getSongData("행복을 병 속에 담는 법", "최유리 솔로")
+    ]
+  },
+  {
+    id: 212,
+    name: "최진훈",
+    role: "배우",
+    image: "/images/cjh.jpg",
+    songs: [
+      getSongData("Proud of your boy", "최진훈 솔로"),
+      getSongData("Come What May", "최진훈, 장유리 듀엣"),
+      getSongData("거인을 데려와", "최진훈 솔로"),
+      getSongData("Confrontation(레미제라블)", "최석우, 최진훈 듀엣")
+    ]
+  },
+  {
+    id: 213,
+    name: "최현지",
+    role: "배우",
+    image: "/images/chj.jpg",
+    songs: [
+      getSongData("Shine", "최현지 솔로"),
+      getSongData("Breathe", "최현지 솔로"),
+      getSongData("내가 춤추고 싶을 때", "최현지, 허진규 듀엣")
+    ]
+  }
+];

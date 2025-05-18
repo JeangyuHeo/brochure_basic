@@ -53,7 +53,7 @@ const songs: Song[] = [
     image: "/images/total.jpg",
     musical: "몬테크리스토",
     tags: ["아련", "추억", "잊지못할첫사랑"],
-    songDescription: "약혼자 ‘에드몬드‘(몬테크리스토)가 죽은 줄 알고 ’몬데고‘와 결혼한 메르세데스. 과거 진실로 사랑했던 ’에드몬드‘와의 추억을 회상하고 그리워하며 부르는 넘버"
+    songDescription: "약혼자 '에드몬드'(몬테크리스토)가 죽은 줄 알고 '몬데고'와 결혼한 메르세데스. 과거 진실로 사랑했던 '에드몬드'와의 추억을 회상하고 그리워하며 부르는 넘버"
   },
   {
     id: 106,
@@ -107,7 +107,7 @@ const songs: Song[] = [
     image: "/images/total.jpg",
     musical: "비틀쥬스",
     tags: ["그리움", "원피스작음", "리디아는15살나는35살"],
-    songDescription: "Dead Mom은 리디아가 죽은 엄마에게 말하는 노래입니다. 아빠가 엄마를 잊고 새 출발을 하려 하자, 리디아는 혼란과 슬픔 속에서 “왜 나를 남겨두고 떠났냐”며 울부짖습니다. 부모의 빈자리에 혼란스러워하는 10대 소녀의 복잡한 감정을 담은 노래입니다."
+    songDescription: "Dead Mom은 리디아가 죽은 엄마에게 말하는 노래입니다. 아빠가 엄마를 잊고 새 출발을 하려 하자, 리디아는 혼란과 슬픔 속에서 \"왜 나를 남겨두고 떠났냐\"며 울부짖습니다. 부모의 빈자리에 혼란스러워하는 10대 소녀의 복잡한 감정을 담은 노래입니다."
   },
   {
     id: 112,
@@ -327,6 +327,268 @@ const songs: Song[] = [
     musical: "디어 에반 핸슨",
     tags: ["희망", "위로", "공동체", "감동"],
     songDescription: "디어 에반 핸슨의 대표곡으로, 혼자가 아니라는 메시지를 전하는 감동적인 넘버입니다. 에반의 거짓말로 시작된 코너 머피 프로젝트가 많은 사람들에게 희망과 위로가 되어가는 과정을 그립니다. '당신은 결코 혼자가 아니며, 반드시 누군가가 당신을 찾아낼 것'이라는 강력한 메시지를 전달하는 뮤지컬의 하이라이트 곡입니다."
+  },
+  // --- 공연 순서(2025) 추가 곡 ---
+  {
+    id: 1001,
+    title: "What is this feeling",
+    description: "김명신, 장애리 듀엣",
+    image: "/images/total.jpg",
+    musical: "위키드",
+    tags: ['tag1', 'tag2', 'tag3'],
+    songDescription: "뮤지컬 '위키드'의 넘버. 글린다와 엘파바가 서로에 대한 감정을 노래하는 곡."
+  },
+  {
+    id: 1002,
+    title: "Dancing through life",
+    description: "허진규 솔로",
+    image: "/images/total.jpg",
+    musical: "위키드",
+    tags: ['tag1', 'tag2', 'tag3'],
+    songDescription: "뮤지컬 '위키드'의 넘버. 피예로가 인생을 가볍게 즐기자는 메시지를 전하는 곡."
+  },
+  {
+    id: 1003,
+    title: "Proud of your boy",
+    description: "최진훈 솔로",
+    image: "/images/total.jpg",
+    musical: "알라딘",
+    tags: ['tag1', 'tag2', 'tag3'],
+    songDescription: "뮤지컬 '알라딘'의 넘버. 알라딘이 어머니에게 자신의 성장을 약속하는 곡."
+  },
+  {
+    id: 1004,
+    title: "사랑은 마치",
+    description: "최유리 솔로",
+    image: "/images/total.jpg",
+    musical: "모차르트!",
+    tags: ['tag1', 'tag2', 'tag3'],
+    songDescription: "뮤지컬 '모차르트!'의 넘버. 콘스탄체가 사랑의 감정을 노래하는 곡."
+  },
+  {
+    id: 1005,
+    title: "My Strongest Suit",
+    description: "장애리 솔로",
+    image: "/images/total.jpg",
+    musical: "아이다",
+    tags: ['tag1', 'tag2', 'tag3'],
+    songDescription: "뮤지컬 '아이다'의 넘버. 아미네리스가 자신의 패션과 자존감을 노래하는 곡."
+  },
+  {
+    id: 1006,
+    title: "A step too far",
+    description: "조재혁, 김지선, 박지현 듀엣",
+    image: "/images/total.jpg",
+    musical: "아이다",
+    tags: ['tag1', 'tag2', 'tag3'],
+    songDescription: "뮤지컬 '아이다'의 넘버. 세 인물이 각자의 감정을 교차하며 부르는 곡."
+  },
+  {
+    id: 1007,
+    title: "Memphis in Live",
+    description: "최석우 솔로",
+    image: "/images/total.jpg",
+    musical: "멤피스",
+    tags: ['tag1', 'tag2', 'tag3'],
+    songDescription: "뮤지컬 '멤피스'의 넘버. 주인공이 음악에 대한 열정을 노래하는 곡."
+  },
+  {
+    id: 1008,
+    title: "Firework",
+    description: "김지선 솔로",
+    image: "/images/total.jpg",
+    musical: "뮤지컬 편곡",
+    tags: ['tag1', 'tag2', 'tag3'],
+    songDescription: "팝송 'Firework'를 뮤지컬 스타일로 편곡한 곡."
+  },
+  {
+    id: 1009,
+    title: "Come What May",
+    description: "최진훈, 장유리 듀엣",
+    image: "/images/total.jpg",
+    musical: "물랑루즈",
+    tags: ['tag1', 'tag2', 'tag3'],
+    songDescription: "뮤지컬 '물랑루즈'의 넘버. 사랑의 영원을 약속하는 듀엣곡."
+  },
+  {
+    id: 1010,
+    title: "Knowing me Knowing you",
+    description: "조재혁 솔로",
+    image: "/images/total.jpg",
+    musical: "맘마미아",
+    tags: ['tag1', 'tag2', 'tag3'],
+    songDescription: "뮤지컬 '맘마미아'의 넘버. 이별의 아픔을 노래하는 곡."
+  },
+  {
+    id: 1011,
+    title: "Shine",
+    description: "최현지 솔로",
+    image: "/images/total.jpg",
+    musical: "뮤지컬 편곡",
+    tags: ['tag1', 'tag2', 'tag3'],
+    songDescription: "희망과 용기를 주는 메시지를 담은 곡."
+  },
+  {
+    id: 1012,
+    title: "Me and the sky",
+    description: "김명신 솔로",
+    image: "/images/total.jpg",
+    musical: "Come From Away",
+    tags: ['tag1', 'tag2', 'tag3'],
+    songDescription: "뮤지컬 'Come From Away'의 넘버. 여성 조종사의 도전과 성취를 노래하는 곡."
+  },
+  {
+    id: 1013,
+    title: "그림자는 길어지고",
+    description: "최석우, 허진규 듀엣",
+    image: "/images/total.jpg",
+    musical: "뮤지컬 편곡",
+    tags: ['tag1', 'tag2', 'tag3'],
+    songDescription: "삶의 여정과 그림자에 대한 성찰을 담은 곡."
+  },
+  {
+    id: 1014,
+    title: "Breathe",
+    description: "최현지 솔로",
+    image: "/images/total.jpg",
+    musical: "In the Heights",
+    tags: ['tag1', 'tag2', 'tag3'],
+    songDescription: "뮤지컬 'In the Heights'의 넘버. 니나가 자신의 불안과 희망을 노래하는 곡."
+  },
+  {
+    id: 1015,
+    title: "거인을 데려와",
+    description: "최진훈 솔로",
+    image: "/images/total.jpg",
+    musical: "뮤지컬 편곡",
+    tags: ['tag1', 'tag2', 'tag3'],
+    songDescription: "도전과 극복의 메시지를 담은 곡."
+  },
+  {
+    id: 1016,
+    title: "Alone",
+    description: "허진규 솔로",
+    image: "/images/total.jpg",
+    musical: "뮤지컬 편곡",
+    tags: ['tag1', 'tag2', 'tag3'],
+    songDescription: "외로움과 성장에 대한 곡."
+  },
+  {
+    id: 1017,
+    title: "영원한 생명",
+    description: "박지현 솔로",
+    image: "/images/total.jpg",
+    musical: "뮤지컬 편곡",
+    tags: ['tag1', 'tag2', 'tag3'],
+    songDescription: "영원한 삶에 대한 갈망을 노래하는 곡."
+  },
+  {
+    id: 1018,
+    title: "Take me as I am",
+    description: "조재혁, 최유리 듀엣",
+    image: "/images/total.jpg",
+    musical: "Jekyll & Hyde",
+    tags: ['tag1', 'tag2', 'tag3'],
+    songDescription: "뮤지컬 '지킬 앤 하이드'의 넘버. 사랑의 조건 없는 수용을 노래하는 듀엣곡."
+  },
+  {
+    id: 1019,
+    title: "If I had wings ",
+    description: "장애리 솔로",
+    image: "/images/total.jpg",
+    musical: "뮤지컬 편곡",
+    tags: ['tag1', 'tag2', 'tag3'],
+    songDescription: "날개가 있다면 펼치고 싶은 희망을 노래하는 곡."
+  },
+  {
+    id: 1020,
+    title: "Defying Gravity",
+    description: "장유리 솔로",
+    image: "/images/total.jpg",
+    musical: "위키드",
+    tags: ['tag1', 'tag2', 'tag3'],
+    songDescription: "뮤지컬 '위키드'의 대표 넘버. 엘파바가 자신의 한계를 뛰어넘겠다는 결의를 노래하는 곡."
+  },
+  {
+    id: 1021,
+    title: "그 어디에",
+    description: "최석우 솔로",
+    image: "/images/total.jpg",
+    musical: "뮤지컬 편곡",
+    tags: ['tag1', 'tag2', 'tag3'],
+    songDescription: "삶의 의미와 방향을 찾는 여정을 노래하는 곡."
+  },
+  {
+    id: 1022,
+    title: "행복을 병 속에 담는 법",
+    description: "최유리 솔로",
+    image: "/images/total.jpg",
+    musical: "뮤지컬 편곡",
+    tags: ['tag1', 'tag2', 'tag3'],
+    songDescription: "행복의 소중함을 노래하는 곡."
+  },
+  {
+    id: 1023,
+    title: "내가 춤추고 싶을 때",
+    description: "최현지, 허진규 듀엣",
+    image: "/images/total.jpg",
+    musical: "뮤지컬 편곡",
+    tags: ['tag1', 'tag2', 'tag3'],
+    songDescription: "춤추고 싶은 자유와 기쁨을 노래하는 곡."
+  },
+  {
+    id: 1024,
+    title: "마지막 순간",
+    description: "김지선 솔로",
+    image: "/images/total.jpg",
+    musical: "뮤지컬 편곡",
+    tags: ['tag1', 'tag2', 'tag3'],
+    songDescription: "삶의 마지막 순간을 돌아보는 곡."
+  },
+  {
+    id: 1025,
+    title: "Confrontation(지킬 앤 하이드)",
+    description: "조재혁 솔로",
+    image: "/images/total.jpg",
+    musical: "지킬 앤 하이드",
+    tags: ['tag1', 'tag2', 'tag3'],
+    songDescription: "뮤지컬 '지킬 앤 하이드'의 명장면. 지킬과 하이드의 내적 갈등을 표현한 곡."
+  },
+  {
+    id: 1026,
+    title: "내 안의 괴물",
+    description: "김명신 솔로",
+    image: "/images/total.jpg",
+    musical: "뮤지컬 편곡",
+    tags: ['tag1', 'tag2', 'tag3'],
+    songDescription: "내면의 괴물과의 싸움을 노래하는 곡."
+  },
+  {
+    id: 1027,
+    title: "Confrontation(레미제라블)",
+    description: "최석우, 최진훈 듀엣",
+    image: "/images/total.jpg",
+    musical: "레미제라블",
+    tags: ['tag1', 'tag2', 'tag3'],
+    songDescription: "뮤지컬 '레미제라블'의 명장면. 자베르와 장발장이 대립하는 곡."
+  },
+  {
+    id: 1028,
+    title: "Raise you up",
+    description: "전체 단체곡",
+    image: "/images/total.jpg",
+    musical: "뮤지컬 편곡",
+    tags: ['tag1', 'tag2', 'tag3'],
+    songDescription: "모두에게 힘과 용기를 주는 단체곡."
+  },
+  {
+    id: 1101,
+    title: "Memory",
+    description: "박지현 솔로",
+    image: "/images/total.jpg",
+    musical: "캣츠",
+    tags: ['tag1', 'tag2', 'tag3'],
+    songDescription: "뮤지컬 '캣츠'의 대표 넘버. 추억과 그리움을 노래하는 곡."
   }
 ];
 

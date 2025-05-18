@@ -55,7 +55,7 @@
 .imageContainer {
   position: relative;
   width: 100%;
-  aspect-ratio: 16/9;
+  aspect-ratio: 4/3;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 2px 8px rgba(139, 0, 0, 0.08);
@@ -129,9 +129,11 @@
 
 /* 첫 번째 버튼을 위한 컨테이너 */
 .primaryButtonContainer {
+  display: flex;
   width: 100%;
   max-width: 320px;
   margin: 0 auto;
+  padding-right: 0.8rem;
 }
 
 /* 보조 버튼을 위한 컨테이너 */
@@ -243,6 +245,8 @@
     width: 100%;
     max-width: 320px;
     margin: 0 auto;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
   }
 
   .secondaryButtonContainer {
