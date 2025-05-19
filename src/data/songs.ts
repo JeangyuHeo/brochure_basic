@@ -335,7 +335,7 @@ const songs: Song[] = [
     description: "김명신, 장애리 듀엣",
     image: "/images/total.jpg",
     musical: "위키드",
-    tags: ['tag1', 'tag2', 'tag3'],
+    tags: ['싫은데왜궁금해', '안맞아안맞아~', '핑크그린',"극혐인데좋아져?"],
     songDescription: "뮤지컬 '위키드'의 넘버. 글린다와 엘파바가 서로에 대한 감정을 노래하는 곡."
   },
   {
