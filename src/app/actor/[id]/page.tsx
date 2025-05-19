@@ -71,7 +71,7 @@ export default async function ActorPage({ params }: Props) {
 
   const isDirector = actor.role === "연출";
   const isHost = actor.role === "진행";
-  const songs = getSongsByName(actor.name);
+  // const songs = getSongsByName(actor.name);
 
   return (
     <div className={styles.container}>
@@ -101,7 +101,7 @@ export default async function ActorPage({ params }: Props) {
             </div>
           ) : isHost ? (
             <div className={styles.songList}>
-              <h2 className={styles.songsTitle}>진행</h2>
+              <h2 className={styles.songsTitle}>역할</h2>
               <p>공연 MC</p>
             </div>
           ) : (

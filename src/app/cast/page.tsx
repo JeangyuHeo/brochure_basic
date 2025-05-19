@@ -1,6 +1,5 @@
 import { castMembersAll } from '../../data/castMembers';
 import CastMember from '../../components/CastMember';
-import Image from 'next/image';
 import styles from '../styles/Cast.module.css';
 
 export default function CastPage() {

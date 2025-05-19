@@ -226,13 +226,14 @@ export const castMembersAll: CastMember[] = [
     name: "장설아",
     role: "연출",
     image: "/images/jsa.jpg",
-    songs: []
+    songs: [],
+    directorExperiences
   },
   {
     id: 202,
     name: "박선영",
     role: "진행",
-    image: "/images/placeholder.jpg",
+    image: "/images/psy.jpg",
     songs: []
   },
   {
