@@ -13,13 +13,23 @@ const groupPhotos = [
 
 export default function Home() {
   const [photoIdx, setPhotoIdx] = useState(0);
+  const [isTransitioning, setIsTransitioning] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setPhotoIdx((prev) => (prev + 1) % groupPhotos.length);
-    }, 3000);
+      setIsTransitioning(true);
+      setTimeout(() => {
+        setPhotoIdx((prev) => (prev + 1) % groupPhotos.length);
+        setIsTransitioning(false);
+      }, 800);
+    }, 4000);
     return () => clearInterval(timer);
   }, []);
+
+  const handleImageLoad = () => {
+    setIsLoading(false);
+  };
 
   return (
     <div className={styles.container}>
@@ -32,13 +42,14 @@ export default function Home() {
         </div>
 
         {/* 이미지 섹션 */}
-        <div className={styles.imageContainer}>
+        <div className={`${styles.imageContainer} ${isLoading ? styles.loading : ''}`}>
           <Image
             src={groupPhotos[photoIdx]}
             alt="공연 포스터"
             fill
             priority
-            className={styles.image}
+            className={`${styles.image} ${isTransitioning ? styles.exit : styles.active}`}
+            onLoad={handleImageLoad}
           />
         </div>
 
