@@ -45,11 +45,11 @@ const part2Songs: SongInfo[] = [
   { title: "Raise you up", singer: "전체" }
 ];
 
-function getSongsByName(name: string) {
-  // 이름이 포함된 곡을 모두 반환
-  const allSongs = [...part1Songs, ...part2Songs];
-  return allSongs.filter(song => song.singer.split(',').map(s => s.trim()).includes(name));
-}
+// function getSongsByName(name: string) {
+//   // 이름이 포함된 곡을 모두 반환
+//   const allSongs = [...part1Songs, ...part2Songs];
+//   return allSongs.filter(song => song.singer.split(',').map(s => s.trim()).includes(name));
+// }
 
 interface Props {
   params: Promise<{
