@@ -167,19 +167,13 @@
   flex-direction: column;
   gap: 0.3rem;
   margin-top: 0.2rem;
-  max-width: 320px;
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 /* 첫 번째 버튼을 위한 컨테이너 */
 .primaryButtonContainer {
   display: flex;
   width: 100%;
-  max-width: 320px;
-  margin: 0 auto;
-  padding-right: 0.8rem;
 }
 
 /* 보조 버튼을 위한 컨테이너 */
@@ -187,8 +181,6 @@
   display: flex;
   gap: 0.3rem;
   width: 100%;
-  max-width: 320px;
-  margin: 0 auto;
 }
 
 .button {
@@ -287,18 +279,9 @@
     -webkit-overflow-scrolling: touch;
   }
 
-  .primaryButtonContainer {
-    width: 100%;
-    max-width: 320px;
-    margin: 0 auto;
-    padding-left: 0.8rem;
-    padding-right: 0.8rem;
-  }
-
+  .primaryButtonContainer,
   .secondaryButtonContainer {
     width: 100%;
-    max-width: 320px;
-    margin: 0 auto;
   }
 }
 
