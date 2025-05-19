@@ -336,7 +336,7 @@ const songs: Song[] = [
     image: "/images/total.jpg",
     musical: "위키드",
     tags: ['싫은데왜궁금해', '안맞아안맞아~', '핑크그린',"극혐인데좋아져?"],
-    songDescription: "뮤지컬 '위키드'의 넘버. 글린다와 엘파바가 서로에 대한 감정을 노래하는 곡."
+    songDescription: "이 노래는 새침한 갈린다, 솔직한 엘파바, 서로에 대한 혼란스런 감정에 처음에는 서로를 극혐하지만, 서서히 다가가게 되는 뒷 이야기를 생각하며 보시길 바랍니다."
   },
   {
     id: 1002,
@@ -344,8 +344,8 @@ const songs: Song[] = [
     description: "허진규 솔로",
     image: "/images/total.jpg",
     musical: "위키드",
-    tags: ['tag1', 'tag2', 'tag3'],
-    songDescription: "뮤지컬 '위키드'의 넘버. 피예로가 인생을 가볍게 즐기자는 메시지를 전하는 곡."
+    tags: ['오늘만은왕자', '목각인형댄스', '치명적인섹시함'],
+    songDescription: "이 노래는 정해진 규칙에서 살기보다 느껴지는대로 세상을 즐기자는 피에르의 말처럼 그 순간을 함께 즐겁게 주시길 바랍니다."
   },
   {
     id: 1003,
@@ -353,17 +353,17 @@ const songs: Song[] = [
     description: "최진훈 솔로",
     image: "/images/total.jpg",
     musical: "알라딘",
-    tags: ['tag1', 'tag2', 'tag3'],
-    songDescription: "뮤지컬 '알라딘'의 넘버. 알라딘이 어머니에게 자신의 성장을 약속하는 곡."
+    tags: ['반백살에', '불러본다', '사모곡'],
+    songDescription: "이 노래는 주인공 알라딘이 자신의 과거 잘못을 돌아보며 어머니에게 사과하고, 앞으로는 더 나은 사람이 되어 어머니가 자랑스러워할 아들이 되겠다고 다짐하는 내용입니다. 알라딘은 자신이 \"형편없는 아들\"이었다고 솔직하게 고백하면서도, 언젠가 반드시 어머니에게 자랑스러운 아들이 되겠다고 약속합니다. 이 노래는 부모의 기대에 미치지 못했다고 느끼는 모든 이들에게 깊은 공감과 위로를 주는 곡"
   },
   {
     id: 1004,
     title: "사랑은 마치",
     description: "최유리 솔로",
     image: "/images/total.jpg",
-    musical: "모차르트!",
-    tags: ['tag1', 'tag2', 'tag3'],
-    songDescription: "뮤지컬 '모차르트!'의 넘버. 콘스탄체가 사랑의 감정을 노래하는 곡."
+    musical: "레드북",
+    tags: ['사랑이란', '변덕스러운사랑', '자라나라사랑사랑'],
+    songDescription: "이 노래는 사랑에 대한 주인공 안나의 생각과, 여기서 뿌려진 씨앗이 나중에 어떻게 커지는지 지켜보는 맛이 있으니 예쁘게 잘 봐주세요"
   },
   {
     id: 1005,
@@ -371,8 +371,8 @@ const songs: Song[] = [
     description: "장애리 솔로",
     image: "/images/total.jpg",
     musical: "아이다",
-    tags: ['tag1', 'tag2', 'tag3'],
-    songDescription: "뮤지컬 '아이다'의 넘버. 아미네리스가 자신의 패션과 자존감을 노래하는 곡."
+    tags: ['둠칫둠칫', '삐걱삐걱', '사치스런언니의플렉스'],
+    songDescription: "이 노래는 아직은 철부지 같은 공주가 강한 자기애를 보여주는 신나는 분위기의 곡이지만, 한편으로는 화려함 속에 불안함을 가리고자하는 그녀의 이면을 엿볼수 있는 곡입니다"
   },
   {
     id: 1006,
@@ -380,8 +380,8 @@ const songs: Song[] = [
     description: "조재혁, 김지선, 박지현 듀엣",
     image: "/images/total.jpg",
     musical: "아이다",
-    tags: ['tag1', 'tag2', 'tag3'],
-    songDescription: "뮤지컬 '아이다'의 넘버. 세 인물이 각자의 감정을 교차하며 부르는 곡."
+    tags: ['운명적인사랑', '엇갈린운명명', '사랑의괴로움'],
+    songDescription: "이 노래는 암네리스는 라다메스가 자신에게 애정을 보여주지 않자 그가 자신을 사랑하지 않는 것인지 걱정하고, 라다메스는 약혼녀인 암네리스를 두고 아이다를 향한 자신의 사랑 때문에 혼란스러워하며, 아이다는 라다메스에 대한 사랑이 누비아인들을 배신하는 것이 될까 두려워 합니다. 이처럼 서로의 복잡한 심정은 후반부를 향해 가면서 격정적인 하모니로 폭발하는 것이 포인트입니다."
   },
   {
     id: 1007,
@@ -389,16 +389,16 @@ const songs: Song[] = [
     description: "최석우 솔로",
     image: "/images/total.jpg",
     musical: "멤피스",
-    tags: ['tag1', 'tag2', 'tag3'],
-    songDescription: "뮤지컬 '멤피스'의 넘버. 주인공이 음악에 대한 열정을 노래하는 곡."
+    tags: ['멤피스지박령', '거봐다괜찮아진다', 'R&B도전기'],
+    songDescription: "이 노래는 주인공 휴이가 멤피스를 떠나서 멀리 있는 것 처럼 느껴졌으나 결국 멤피스의 문화와 음악이 휴이 안에서 살아 숨쉬고 있음을 깨달으면서 고조되는 휴이의 감정을 느끼는 것이 감상 포인트입니다."
   },
   {
     id: 1008,
     title: "Firework",
     description: "김지선 솔로",
     image: "/images/total.jpg",
-    musical: "뮤지컬 편곡",
-    tags: ['tag1', 'tag2', 'tag3'],
+    musical: "물랑루즈",
+    tags: ['대문자I지만', '당당하게', '자신있게', '널응원해'],
     songDescription: "팝송 'Firework'를 뮤지컬 스타일로 편곡한 곡."
   },
   {
@@ -407,8 +407,8 @@ const songs: Song[] = [
     description: "최진훈, 장유리 듀엣",
     image: "/images/total.jpg",
     musical: "물랑루즈",
-    tags: ['tag1', 'tag2', 'tag3'],
-    songDescription: "뮤지컬 '물랑루즈'의 넘버. 사랑의 영원을 약속하는 듀엣곡."
+    tags: ['숨죽이고듣는듀엣', '순한맛버전', '아몰랑루즈해', '여보사랑해'],
+    songDescription: "이 노래는 감동적인 하모니가 준비되어있다고 합니다. 두 분의 화음이 관객의 마음을 사로잡을 수 있을지 잘 들어주시기 바랍니다."
   },
   {
     id: 1010,
@@ -416,17 +416,17 @@ const songs: Song[] = [
     description: "조재혁 솔로",
     image: "/images/total.jpg",
     musical: "맘마미아",
-    tags: ['tag1', 'tag2', 'tag3'],
-    songDescription: "뮤지컬 '맘마미아'의 넘버. 이별의 아픔을 노래하는 곡."
+    tags: ['ABBA명곡', '사랑의흔적', 'ABBAForever'],
+    songDescription: "이 노래는 샘의 인간적인 면모가 드러나는 핵심 넘버 중 하나로, 관객들에게 ABBA 특유의 세련된 멜로디로 깊은 공감을 이끌어내는 노래입니다."
   },
   {
     id: 1011,
     title: "Shine",
     description: "최현지 솔로",
     image: "/images/total.jpg",
-    musical: "뮤지컬 편곡",
-    tags: ['tag1', 'tag2', 'tag3'],
-    songDescription: "희망과 용기를 주는 메시지를 담은 곡."
+    musical: "스핏파이어그릴",
+    tags: ['어두운과거는안녕~', '새로운시작', '새벽빛', '나를비춰줘'],
+    songDescription: "이 노래는 어두운 과거를 지닌 퍼시가 시골 마을에 도착해 새로운 삶을 시작하며 부르는 노래로, '지금껏 꺼져 있던 내 안의 빛이 다시 켜질 수 있을까?'라는 질문을 던지며 희망을 찾아가는 순간을 담고 있습니다. 잔잔하지만 내면의 강한 의지를 보여주는 곡입니다."
   },
   {
     id: 1012,
@@ -434,17 +434,17 @@ const songs: Song[] = [
     description: "김명신 솔로",
     image: "/images/total.jpg",
     musical: "Come From Away",
-    tags: ['tag1', 'tag2', 'tag3'],
-    songDescription: "뮤지컬 'Come From Away'의 넘버. 여성 조종사의 도전과 성취를 노래하는 곡."
+    tags: ['911', '최초여성캡틴', '숨쉴시간주세요'],
+    songDescription: "이 노래는 수많은 어려움과 편견을 이겨낸 캡틴의 감동적이고 슬프지만 희망적인 이야기입니다."
   },
   {
     id: 1013,
     title: "그림자는 길어지고",
     description: "최석우, 허진규 듀엣",
     image: "/images/total.jpg",
-    musical: "뮤지컬 편곡",
-    tags: ['tag1', 'tag2', 'tag3'],
-    songDescription: "삶의 여정과 그림자에 대한 성찰을 담은 곡."
+    musical: "앨리자벳",
+    tags: ['죽음의유혹', '치명적두남자', '고음내다죽을듯'],
+    songDescription: "이 노래는 오스트리아 황태자 루돌프의 고통과 절망을 죽음이라는 캐릭터를 통해 풀어내는 중요한 노래이므로 루돌프의 내적 갈등과 죽음의 유혹이 점차 고조되며 절정에 달하는 감정을 느끼는 것이 감상 포인트입니다."
   },
   {
     id: 1014,
@@ -452,34 +452,34 @@ const songs: Song[] = [
     description: "최현지 솔로",
     image: "/images/total.jpg",
     musical: "In the Heights",
-    tags: ['tag1', 'tag2', 'tag3'],
-    songDescription: "뮤지컬 'In the Heights'의 넘버. 니나가 자신의 불안과 희망을 노래하는 곡."
+    tags: ['스탠포드자퇴생', '기대가부담이될때', '숨한번쉬고_다시시작해'],
+    songDescription: "이 노래는 자신이 실패자라는 생각에 시달리며 학교를 중퇴하고, 아무에게도 알리지 않은 채 고향으로 돌아온 니나가, 가족과 이웃들이 자신을 반기고 자랑스러워하는 모습을 보며 내면에서 폭발하는 불안, 죄책감, 정체성 혼란을 고스란히 담은 곡입니다. 니나가 자신을 다시 찾기 위한 첫 걸음으로, breathe라는 곡 제목처럼 '숨을 고르고 다시 시작하려는 순간' 을 담은 곡입니다."
   },
   {
     id: 1015,
     title: "거인을 데려와",
     description: "최진훈 솔로",
     image: "/images/total.jpg",
-    musical: "뮤지컬 편곡",
-    tags: ['tag1', 'tag2', 'tag3'],
-    songDescription: "도전과 극복의 메시지를 담은 곡."
+    musical: "시라노",
+    tags: ['위대한', '고음들과', '맞서리라'],
+    songDescription: "이 노래는 뮤지컬 지킬앤하이드의 작곡가로 유명한 프랭크 와일드혼(Frank Wildhorn)이 작곡한 곡으로 주인공 시라노의 강인한 신념과 정의, 그리고 영웅적인 기개를 잘 드러내는 곡입니다."
   },
   {
     id: 1016,
     title: "Alone",
     description: "허진규 솔로",
     image: "/images/total.jpg",
-    musical: "뮤지컬 편곡",
-    tags: ['tag1', 'tag2', 'tag3'],
-    songDescription: "외로움과 성장에 대한 곡."
+    musical: "시라노",
+    tags: ['아기사자포효', '모잘쓸까말까', '이래봬도전쟁광'],
+    songDescription: "이 노래는 배우에게서는 아기 사자와 같은 목소리로 우렁차게 부르려는 모습을 시라노에게서는 세상을 잃고 억장이 무너진 모습을 포인트로 즐겨주시기 바랍니다! 많은 박수 부탁드립니다!"
   },
   {
     id: 1017,
     title: "영원한 생명",
     description: "박지현 솔로",
     image: "/images/total.jpg",
-    musical: "뮤지컬 편곡",
-    tags: ['tag1', 'tag2', 'tag3'],
+    musical: "레베카",
+    tags: ['우린언제나함께', '불멸의난초', '어서돌아와', '레베카불사조설'],
     songDescription: "영원한 삶에 대한 갈망을 노래하는 곡."
   },
   {
@@ -488,17 +488,17 @@ const songs: Song[] = [
     description: "조재혁, 최유리 듀엣",
     image: "/images/total.jpg",
     musical: "Jekyll & Hyde",
-    tags: ['tag1', 'tag2', 'tag3'],
-    songDescription: "뮤지컬 '지킬 앤 하이드'의 넘버. 사랑의 조건 없는 수용을 노래하는 듀엣곡."
+    tags: ['있는그대로', '지킬', '엠마'],
+    songDescription: "이 노래는 지킬과 엠마가 서로의 사랑을 확인하고 약속하는 장면입니다. 지킬과 엠마의 하모니가 포인트입니다."
   },
   {
     id: 1019,
     title: "If I had wings ",
     description: "장애리 솔로",
     image: "/images/total.jpg",
-    musical: "뮤지컬 편곡",
-    tags: ['tag1', 'tag2', 'tag3'],
-    songDescription: "날개가 있다면 펼치고 싶은 희망을 노래하는 곡."
+    musical: "드라큘라",
+    tags: ['날개송', '나쁜남자주의', '숨좀쉬자=3=3'],
+    songDescription: "이 노래는 자유를 원하지만 한편으로는 드라큘라에게 벗어날 수 없음을 느끼며 슬픔과 혼란스러움을 표현했다."
   },
   {
     id: 1020,
@@ -506,35 +506,35 @@ const songs: Song[] = [
     description: "장유리 솔로",
     image: "/images/total.jpg",
     musical: "위키드",
-    tags: ['tag1', 'tag2', 'tag3'],
-    songDescription: "뮤지컬 '위키드'의 대표 넘버. 엘파바가 자신의 한계를 뛰어넘겠다는 결의를 노래하는 곡."
+    tags: ['초록마녀날아오름', '착한사람눈에만보임', '나는야율파바'],
+    songDescription: "이 노래는 진정한 자신을 찾아 하늘로 날아오르는 순간이 무대위에서 어떻게 표현되는지를 봐주시기 바랍니다."
   },
   {
     id: 1021,
     title: "그 어디에",
     description: "최석우 솔로",
     image: "/images/total.jpg",
-    musical: "뮤지컬 편곡",
-    tags: ['tag1', 'tag2', 'tag3'],
-    songDescription: "삶의 의미와 방향을 찾는 여정을 노래하는 곡."
+    musical: "팬텀",
+    tags: ['대체어딨는거야', '넌내거야', '가면전문배우'],
+    songDescription: "이 노래는 노래의 시작에서 팬텀의 고백은 다소 혼란스럽고 크리스틴을 향한 갈망이 복잡하게 얽혀 있으나 결국 자신이 크리스틴의 유일한 구원자이며, 그녀가 팬텀에게서 벗어날 수 없다는 확신을 갖게되면서 감정이 고조되고 강하게 변화되는 목소리를 느끼는 것이 감상 포인트입니다."
   },
   {
     id: 1022,
     title: "행복을 병 속에 담는 법",
     description: "최유리 솔로",
     image: "/images/total.jpg",
-    musical: "뮤지컬 편곡",
-    tags: ['tag1', 'tag2', 'tag3'],
-    songDescription: "행복의 소중함을 노래하는 곡."
+    musical: "레베카",
+    tags: ['이별', '추억', '파도소리'],
+    songDescription: "이 노래는 ich의 기대와 실망, 그리고 그 속에서 피어오르는 굳은 의지가 포인트입니다."
   },
   {
     id: 1023,
     title: "내가 춤추고 싶을 때",
     description: "최현지, 허진규 듀엣",
     image: "/images/total.jpg",
-    musical: "뮤지컬 편곡",
-    tags: ['tag1', 'tag2', 'tag3'],
-    songDescription: "춤추고 싶은 자유와 기쁨을 노래하는 곡."
+    musical: "앨리자벳",
+    tags: ['내인생내맘대로살거야', '저리가토드', '밀당인듯밀당아닌', '웃상토드'],
+    songDescription: "이 노래는 단순한 남녀의 유혹과 거절 노래가 아닌, 자유의지를 끝까지 지키려는 엘리자벳과, 그녀를 무너뜨리려는 죽음 사이의 치열한 권력 싸움을 그려낸 곡입니다."
   },
   {
     id: 1024,
@@ -542,7 +542,7 @@ const songs: Song[] = [
     description: "김지선 솔로",
     image: "/images/total.jpg",
     musical: "뮤지컬 편곡",
-    tags: ['tag1', 'tag2', 'tag3'],
+    tags: ['죽음을앞둔심정', '삑사리가아닙니다', '격앙된감정의표현입니다'],
     songDescription: "삶의 마지막 순간을 돌아보는 곡."
   },
   {
@@ -551,8 +551,8 @@ const songs: Song[] = [
     description: "조재혁 솔로",
     image: "/images/total.jpg",
     musical: "지킬 앤 하이드",
-    tags: ['tag1', 'tag2', 'tag3'],
-    songDescription: "뮤지컬 '지킬 앤 하이드'의 명장면. 지킬과 하이드의 내적 갈등을 표현한 곡."
+    tags: ['내면의대결', '이중성', '소름주의'],
+    songDescription: "이 노래는 배우의 압도적인 연기력과 가창력이 요구되는 명장면입니다! 한 사람의 목소리로 완전히 다른 두 인물을 표현하는 극적인 대비가 백미입니다. 음악은 급격하게 전환되며 내면의 폭발과 갈등을 강렬하게 드러냅니다. 무대 연출에서는 조명, 거울, 그림자 등을 활용해 지킬과 하이드의 이중성을 시각화한 것이 감상 포인트입니다."
   },
   {
     id: 1026,
@@ -560,8 +560,8 @@ const songs: Song[] = [
     description: "김명신 솔로",
     image: "/images/total.jpg",
     musical: "뮤지컬 편곡",
-    tags: ['tag1', 'tag2', 'tag3'],
-    songDescription: "내면의 괴물과의 싸움을 노래하는 곡."
+    tags: ['그웬플린넌내꺼', '귀부인인데', '있는힘껏'],
+    songDescription: "이 노래는 그웬플린에 대한 숨길수 없는 극단적인 감정을 드러내는 노래입니다."
   },
   {
     id: 1027,
@@ -569,8 +569,8 @@ const songs: Song[] = [
     description: "최석우, 최진훈 듀엣",
     image: "/images/total.jpg",
     musical: "레미제라블",
-    tags: ['tag1', 'tag2', 'tag3'],
-    songDescription: "뮤지컬 '레미제라블'의 명장면. 자베르와 장발장이 대립하는 곡."
+    tags: ['독박육아장발장', '스토커자베르', '슈퍼초울트라액션활극'],
+    songDescription: "이 노래는 법을 위반한 자는 반드시 처벌 받아야 한다는 자베르와 사람은 용서 받을 수 있다는 장발장의 철학과 가치관이 극명하게 대립하면서 나타나는 두 인물의 감정 충돌을 지켜보는 것이 감상 포인트입니다."
   },
   {
     id: 1028,
@@ -578,7 +578,7 @@ const songs: Song[] = [
     description: "전체 단체곡",
     image: "/images/total.jpg",
     musical: "뮤지컬 편곡",
-    tags: ['tag1', 'tag2', 'tag3'],
+    tags: ['땐스땐스', '다비켜라!!', '모두행복해요'],
     songDescription: "모두에게 힘과 용기를 주는 단체곡."
   },
   {
@@ -587,8 +587,8 @@ const songs: Song[] = [
     description: "박지현 솔로",
     image: "/images/total.jpg",
     musical: "캣츠",
-    tags: ['tag1', 'tag2', 'tag3'],
-    songDescription: "뮤지컬 '캣츠'의 대표 넘버. 추억과 그리움을 노래하는 곡."
+    tags: ['한때는라떼는', '왕따지만괜찮아', '내일도태양은뜬다', '그리자벨라응원해'],
+    songDescription: "이 노래는 한 때는 \"화려한 고양이\"라고 불렸었지만 어느새 노쇠하고 초라해지면서 고양이 무리 중 그 누구도 어울려 주지 않는 신세가 된 그리자벨라가 예전의 좋았던 시절이 그립지만 앞으로도 희망을 잃지 않으려는 것이 감상 포인트입니다."
   }
 ];
 
