@@ -4,12 +4,6 @@ import Link from 'next/link';
 import styles from '../../styles/Actor.module.css';
 import type { DirectorExperience } from '../../../types/types';
 
-// SongInfo 타입 song-list/page.tsx에서 복사
-interface SongInfo {
-  title: string;
-  singer: string;
-}
-
 // function getSongsByName(name: string) {
 //   // 이름이 포함된 곡을 모두 반환
 //   const allSongs = [...part1Songs, ...part2Songs];
