@@ -541,7 +541,7 @@ const songs: Song[] = [
     title: "마지막 순간",
     description: "김지선 솔로",
     image: "/images/total.jpg",
-    musical: "뮤지컬 편곡",
+    musical: "마타하리",
     tags: ['죽음을앞둔심정', '삑사리가아닙니다', '격앙된감정의표현입니다'],
     songDescription: "삶의 마지막 순간을 돌아보는 곡."
   },
@@ -559,7 +559,7 @@ const songs: Song[] = [
     title: "내 안의 괴물",
     description: "김명신 솔로",
     image: "/images/total.jpg",
-    musical: "뮤지컬 편곡",
+    musical: "웃는남자",
     tags: ['그웬플린넌내꺼', '귀부인인데', '있는힘껏'],
     songDescription: "이 노래는 그웬플린에 대한 숨길수 없는 극단적인 감정을 드러내는 노래입니다."
   },
@@ -577,7 +577,7 @@ const songs: Song[] = [
     title: "Raise you up",
     description: "전체 단체곡",
     image: "/images/total.jpg",
-    musical: "뮤지컬 편곡",
+    musical: "킹키부츠",
     tags: ['땐스땐스', '다비켜라!!', '모두행복해요'],
     songDescription: "모두에게 힘과 용기를 주는 단체곡."
   },
